@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi & Kisah Lengkap Sa'id bin Zaid (ra) - Al-'Asyarah al-Mubasysyarun bil Jannah</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        parchment: {
+                            50: '#fdfbf7',
+                            100: '#f7f3e9',
+                            200: '#ebe3d1',
+                            800: '#3e382d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arabic-text {
+            font-family: 'Amiri', serif;
+        }
+        .pattern-bg {
+            background-color: #022c22;
+            background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #022c22 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.95;
+        }
+        .poster-border {
+            border: 12px double #d97706;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .poster-card {
+                box-shadow: none !important;
+                border: 2px solid #000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-parchment-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar Sticky -->
+    <header class="sticky top-0 z-50 bg-emerald-950/95 backdrop-blur-md text-amber-100 border-b border-gold-600/30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-600 to-amber-300 flex items-center justify-center text-emerald-950 text-xl font-bold shadow-md">
+                    <i class="fa-solid fa-star-and-crescent"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-wide text-amber-200 leading-tight">Sa'id bin Zaid <span class="text-xs text-gold-400 font-normal">(ra)</span></h1>
+                    <p class="text-xs text-emerald-300 font-arabic tracking-widest">المبشر بالجنة — Ahli Surga</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                <button onclick="switchTab('biografi')" id="nav-biografi" class="px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> Biografi Lengkap
+                </button>
+                <button onclick="switchTab('poster')" id="nav-poster" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-scroll mr-1.5"></i> Poster Digital
+                </button>
+                <button onclick="switchTab('timeline')" id="nav-timeline" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-timeline mr-1.5"></i> Garis Waktu
+                </button>
+                <button onclick="switchTab('catatan')" id="nav-catatan" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-pen-to-square mr-1.5"></i> Catatan Saya
+                </button>
+                <button onclick="switchTab('kuis')" id="nav-kuis" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> Kuis Interaktif
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-amber-300 hover:text-white text-2xl focus:outline-none p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-950 border-b border-gold-600/30 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="switchTab('biografi'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-amber-300 bg-emerald-900/60 font-medium">
+                <i class="fa-solid fa-book-open mr-2"></i> Biografi Lengkap
+            </button>
+            <button onclick="switchTab('poster'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-scroll mr-2"></i> Poster Digital
+            </button>
+            <button onclick="switchTab('timeline'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-timeline mr-2"></i> Garis Waktu
+            </button>
+            <button onclick="switchTab('catatan'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-pen-to-square mr-2"></i> Catatan Saya
+            </button>
+            <button onclick="switchTab('kuis'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-graduation-cap mr-2"></i> Kuis Interaktif
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- TAB 1: BIOGRAFI LENGKAP -->
+        <section id="tab-biografi" class="tab-content block space-y-8">
+            <!-- Hero Banner -->
+            <div class="pattern-bg rounded-2xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden border border-gold-500/30">
+                <div class="max-w-3xl relative z-10 space-y-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/20 text-gold-400 border border-gold-500/40">
+                        <i class="fa-solid fa-star mr-1.5 text-xs"></i> Al-'Asyarah al-Mubasysyarun bil Jannah
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-amber-200 tracking-tight">
+                        Sa'id bin Zaid <span class="text-2xl sm:text-3xl font-normal text-gold-400">(رضي الله عنه)</span>
+                    </h2>
+                    <p class="text-amber-100/90 text-base sm:text-lg leading-relaxed font-light">
+                        "Abu Bakar di surga, Umar di surga, Utsman di surga, Ali di surga, Talhah di surga, Az-Zubair di surga, Abdurrahman bin Auf di surga, Sa'id bin Abi Waqqas di surga, Abu Ubaidah bin al-Jarrah di surga, dan Sa'id bin Zaid di surga."
+                        <span class="block mt-1 text-sm text-gold-400 italic">— HR. Ahmad, Abu Dawud, Tirmidzi, & An-Nasa'i</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Category Filter -->
+            <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border border-parchment-200 flex flex-col md:flex-row gap-4 items-center justify-between">
+                <!-- Search Input -->
+                <div class="relative w-full md:w-1/2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="biography-search" onkeyup="filterBiography()" placeholder="Cari peristiwa, tempat, atau tokoh (cth: Umar, Yarmuk, Zaid bin Amru)..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:border-transparent text-sm">
+                </div>
+
+                <!-- Chapter Filter Buttons -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto">
+                    <button onclick="filterChapter('all')" class="chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition">Semua Bab</button>
+                    <button onclick="filterChapter('bab1')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 1</button>
+                    <button onclick="filterChapter('bab2')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 2</button>
+                    <button onclick="filterChapter('bab3')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 3</button>
+                    <button onclick="filterChapter('bab4')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 4</button>
+                    <button onclick="filterChapter('bab5')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 5</button>
+                    <button onclick="filterChapter('bab6')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 6</button>
+                    <button onclick="filterChapter('bab7')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 7</button>
+                </div>
+            </div>
+
+            <!-- Biography Chapters -->
+            <div id="biography-container" class="space-y-6">
+
+                <!-- BAB 1 -->
+                <div class="bio-card bab1 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">1</span>
+                            Silsilah, Nasab, dan Latar Belakang Keluarga
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Nasab & Ayah</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-dna text-gold-600 mr-2"></i>Garis Keturunan dan Silsilah:</h4>
+                            <p class="text-sm sm:text-base">
+                                <strong>Sa'id bin Zaid bin Amru bin Nufail al-Adawi al-Qurasyi</strong> adalah seorang pahlawan besar dan sahabat utama Nabi Muhammad SAW. Beliau dilahirkan di Makkah dari garis keturunan yang amat terpandang di kalangan Suku Quraisy, yaitu kabilah Bani Adi—kabilah yang sama dengan Umar bin al-Khattab radhiyallahu 'anhu. Nasab Sa'id bin Zaid bersambung dengan Rasulullah SAW pada kakek mereka, Ka'ab bin Lu'ay.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-seedling text-gold-600 mr-2"></i>Teladan dan Perjalanan Sang Ayah (Zaid bin Amru):</h4>
+                            <p class="text-sm sm:text-base">
+                                Keistimewaan Sa'id bin Zaid sangat dipengaruhi oleh watak dan keteguhan ayahnya, Zaid bin Amru bin Nufail. Di tengah kegelapan masa Jahiliyah—ketika masyarakat Makkah tenggelam dalam penyembahan berhala (seperti Latta dan Uzza), memakan daging hewan yang disembelih untuk patung, serta mengubur bayi-bayi perempuan hidup-hidup—ayah beliau justru menolak keras seluruh tradisi kesyirikan tersebut. Zaid bin Amru merupakan salah satu dari empat orang di Makkah (bersama Waraqah bin Naufal, Ubaidullah bin Jahsy, dan Utsman bin al-Huwairits) yang sadar bahwa penyembahan berhala adalah kebatilan yang menyimpang dari ajaran lurus Nabi Ibrahim AS.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-utensils text-gold-600 mr-2"></i>Logika Tauhid Zaid bin Amru:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika diajak menyantap hidangan sembelihan untuk berhala bersama tokoh-tokoh Quraisy, Zaid bin Amru menolak dengan logis dan tajam. Beliau berkata bahwa hewan diciptakan oleh Allah, diletakkan di bumi Allah, diberi makan rumput yang ditumbuhkan oleh air hujan dari Allah, sehingga sangat tidak masuk akal jika hewan tersebut disembelih atas nama selain Allah. Zaid bin Amru mengelana hingga ke tanah Syam untuk mencari <em>Al-Hanifiyyah</em> (agama tauhid yang lurus). Meskipun beliau meninggal dunia beberapa saat sebelum Muhammad SAW diangkat menjadi Rasul, Nabi SAW kelak mengabarkan bahwa Zaid bin Amru akan dibangkitkan pada hari kiamat sebagai satu umat tersendiri yang berdiri tunggal di atas tauhid. Di bawah bimbingan sang ayah inilah, Sa'id bin Zaid tumbuh menjadi pemuda yang berjiwa suci dan terbebas dari noda musyrik sejak masa kecilnya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 2 -->
+                <div class="bio-card bab2 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">2</span>
+                            Doa Sang Ayah, Masuk Islam, dan Pernikahan dengan Fatimah binti al-Khattab
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">As-Sabiqunal Awwalun</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hands-praying text-gold-600 mr-2"></i>Doa Tulus Zaid bin Amru:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sebelum wafat akibat dirampok di tengah perjalanan pulangnya dari pencarian agama yang benar di Syam, Zaid bin Amru sempat menatap ke langit dengan mengucurkan air mata dan memanjatkan doa yang amat tulus: <em>"Ya Allah, jika Engkau mentakdirkan aku tidak berjumpa dengan Nabi akhir zaman yang aku rindukan ini, maka aku mohon kepada-Mu, jadikanlah anakku, Sa'id, sebagai pengikut Muhammad."</em> Allah SWT mengabulkan doa mulia tersebut.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-heart text-gold-600 mr-2"></i>Masuk Islam di Usia Muda:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika Rasulullah SAW mulai menyerukan Islam secara rahasia di Makkah, Sa'id bin Zaid yang saat itu baru menginjak usia sekitar 20 tahun langsung menyambut seruan iman tersebut tanpa ragu sedikit pun. Beliau masuk Islam di barisan awal (<em>as-sabiqunal awwalun</em>) dan siap menanggung segala bentuk tekanan maupun intimidasi dari kaum kafir Quraisy.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-ring text-gold-600 mr-2"></i>Pernikahan Berkah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sa'id bin Zaid menikah dengan Fatimah binti al-Khattab radhiyallahu 'anha, putri dari al-Khattab dan merupakan saudara kandung dari Umar bin al-Khattab. Kediaman Sa'id dan Fatimah menjadi salah satu markas tersembunyi tempat para sahabat awal belajar Al-Qur'an di bawah bimbingan Khabbab bin al-Aratt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 3 -->
+                <div class="bio-card bab3 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">3</span>
+                            Jalan Hidayah bagi Umar bin al-Khattab dan Hijrah ke Madinah
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Keislaman Umar</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-book-quran text-gold-600 mr-2"></i>Peristiwa Monumental Masuk Islamnya Umar:</h4>
+                            <p class="text-sm sm:text-base">
+                                Suatu hari, Umar bin al-Khattab yang saat itu masih menjadi musuh utama Islam berjalan dengan pedang terhunus dan emosi meluap-luap menuju rumah Sa'id dan Fatimah setelah mendengar kabar keislaman adik dan iparnya. Di dalam rumah, beliau mendengar lantunan ayat-ayat Al-Qur'an (Surah Thaha) yang sedang dibaca. Umar mendobrak masuk, memukul Sa'id bin Zaid hingga menjatuhkannya, serta melukai adiknya sendiri yang berusaha melindungi suaminya.
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Namun, keteguhan luar biasa ditunjukkan oleh Sa'id dan Fatimah. Dengan wajah bersimbah darah, mereka dengan berani menatap Umar dan menegaskan bahwa mereka telah beriman kepada Allah dan Rasul-Nya serta tidak akan pernah meninggalkan Islam sampai kapan pun. Keteguhan iman dan keindahan lantunan Al-Qur'an tersebut seketika meluluhkan hati keras Umar bin al-Khattab. Umar kemudian meminta lembaran wahyu tersebut, membacanya, dan dengan gemetar melangkah menuju Darul Arqam untuk mengucapkan syahadat di hadapan Rasulullah SAW. Para ulama mencatat bahwa setiap amal saleh dan keagungan yang diraih oleh Umar bin al-Khattab kelak turut mengalirkan pahala yang berlimpah bagi Sa'id bin Zaid yang menjadi perantara utama hidayah Umar.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hands-holding text-gold-600 mr-2"></i>Hijrah ke Madinah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Saat perintah hijrah diturunkan, Sa'id bin Zaid bersama istrinya meninggalkan tanah kelahiran mereka di Makkah demi mempertahankan akidah menuju Madinah. Di Madinah, Rasulullah SAW mempersaudarakan Sa'id bin Zaid dengan sahabat Anshar yang mulia, Ubay bin Ka'ab radhiyallahu 'anhu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 4 -->
+                <div class="bio-card bab4 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">4</span>
+                            Misi Intelijen Perang Badar dan Keikutsertaan dalam Peperangan Utama
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Al-Badari</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-binoculars text-gold-600 mr-2"></i>Tugas Khusus di Perang Badar:</h4>
+                            <p class="text-sm sm:text-base">
+                                Mengenai keikutsertaan dalam Perang Badar (tahun 2 Hijriah), terdapat catatan sejarah yang sangat istimewa. Sebelum Pertempuran Badar meletus, Rasulullah SAW mengutus Sa'id bin Zaid bersama Talhah bin Ubaidillah untuk melakukan tugas intelijen militer khusus—yaitu melacak dan mengamati pergerakan kafilah dagang besar pimpinan Abu Sufyan di wilayah utara. Karena menjalankan misi rahasia yang sangat strategis ini, beliau berdua tidak sempat berada di garis depan saat konfrontasi fisik di Badar terjadi.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-award text-gold-600 mr-2"></i>Pahala Penuh dan Gelar Al-Badari:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sekembalinya mereka ke Madinah, Rasulullah SAW menyambut mereka, memberikan bagian harta rampasan perang (<em>ghanimah</em>) secara utuh, dan menguatkan bahwa mereka mendapatkan pahala penuh sebagaimana prajurit yang bertempur di Badar. Oleh karena itu, para ulama pakar sirah tetap menyematkan gelar mulia <strong>Al-Badari</strong> (veteran Perang Badar) kepada Sa'id bin Zaid. Selepas Perang Badar, Sa'id bin Zaid tidak pernah absen dalam seluruh peperangan besar mendampingi Rasulullah SAW, termasuk Perang Uhud, Perang Khandaq, Perjanjian Hudaibiyah, hingga Penaklukan Kota Makkah (<em>Fathu Makkah</em>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 5 -->
+                <div class="bio-card bab5 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">5</span>
+                            Pahlawan yang Tersembunyi dan Aksi Heroik di Pertempuran Yarmuk
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Singa Yarmuk</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-user-secret text-gold-600 mr-2"></i>Pahlawan yang Tak Terlihat:</h4>
+                            <p class="text-sm sm:text-base">
+                                Salah satu hal yang paling mengagumkan dari kepribadian Sa'id bin Zaid adalah sifatnya yang amat rendah hati dan keahliannya dalam menyembunyikan amal ibadah (ikhlas). Meskipun beliau terlibat dalam pertempuran-pertempuran dahsyat dan memegang peran penting di masa pemerintahan Khulafaur Rasyidin (Abu Bakar, Umar, Utsman, dan Ali), rincian cerita mengenai dirinya dalam kitab-kitab sejarah terbilang lebih sedikit dibandingkan sahabat populer lainnya karena beliau sangat pandai menjaga agar setiap perjuangan dan amal malamnya hanya diketahui oleh Allah SWT.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-shield-halved text-gold-600 mr-2"></i>Aksi Heroik sebagai Singa Yarmuk:</h4>
+                            <p class="text-sm sm:text-base">
+                                Puncak kehebatan militer Sa'id bin Zaid terlihat dalam Pertempuran Yarmuk di tanah Syam—pertempuran penentu di mana sekitar 40.000 prajurit muslim harus berhadapan dengan 200.000 pasukan terlatih Kekaisaran Romawi (Bizantium). Dalam kecamuk perang yang menggentarkan tersebut, Sa'id bin Zaid mengincar langsung panglima perang musuh di barisan depan. Dengan keberanian luar biasa, beliau memacu kudanya, melompat turun dari atas kuda pada jarak dekat, meluncur dan menggelinding di tanah hingga sampai ke kaki kuda panglima Romawi tersebut. Beliau lalu melompat ke atas kuda musuh, mencabut pisau pendeknya, dan merobohkan sang panglima Romawi seketika. Sa'id kemudian menguasai kuda musuh tersebut, membawanya ke tengah barisan sambil bertakbir dan berseru: <em>"Pimpinan kalian telah kubunuh!"</em> Aksi nekad ini meruntuhkan mental ratusan ribu tentara Romawi serta membawa kemenangan gemilang bagi kaum muslimin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 6 -->
+                <div class="bio-card bab6 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">6</span>
+                            Doa yang Mustajab dan Kasus Sengketa Tanah Arwa binti Aus
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Mustajabud Da'wah</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hands-praying text-gold-600 mr-2"></i>Kedekatan Spiritual dan Doa yang Terkabul:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sa'id bin Zaid dikenal luas memiliki kedekatan spiritual yang sangat tinggi dengan Allah SWT, sehingga doa-doanya sangat mustajab (langsung dikabulkan). Peristiwa terkenal terjadi di Madinah pada masa kekhalifahan Marwan bin al-Hakam. Seorang wanita bernama Arwa binti Aus mendatangi Marwan dan menuduh secara zalim bahwa Sa'id bin Zaid telah menyerobot sebagian tanah miliknya dengan menggeser patok pembatas. Marwan kemudian memanggil Sa'id untuk mengklarifikasi.
+                            </p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-triangle-exclamation text-gold-600 mr-2"></i>Sumpah dan Doa Tegas Sa'id:</h4>
+                            <p class="text-sm sm:text-base mb-2">
+                                Mendengar tuduhan tersebut, Sa'id tersenyum sedih dan berkata: <em>"Bagaimana mungkin aku mengambil tanahnya, sedangkan aku pernah mendengar langsung Rasulullah SAW bersabda: 'Barangsiapa yang mengambil tanah orang lain secara zalim walau hanya sejengkal, maka kelak tanah tersebut akan dililitkan di lehernya dari tujuh lapis bumi pada hari kiamat'?"</em> Karena merasa sangat dizalimi dan demi menjaga nama baik para sahabat Nabi, Sa'id bin Zaid mengangkat tangan mendongak ke langit dan berdoa: <em>"Ya Allah, jika wanita ini berdusta dan hanya ingin mencemarkan namaku, maka butakanlah matanya dan matikanlah dia di tanahnya sendiri (tenggelam di dalam sumurnya)."</em>
+                            </p>
+                            <p class="text-sm sm:text-base text-emerald-950 font-semibold bg-white p-3 rounded border border-amber-300">
+                                Tidak lama setelah peristiwa itu, Arwa binti Aus mengalami kebutaan total pada kedua matanya. Suatu hari, ketika wanita buta tersebut sedang berjalan-jalan di area tanah yang diperkarakannya, ia tergelincir dan jatuh ke dalam sumur miliknya sendiri hingga tewas. Peristiwa ini menjadi iktibar dan bukti nyata bagi penduduk Madinah akan kebenaran dan kemanjuran doa Sa'id bin Zaid.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 7 -->
+                <div class="bio-card bab7 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">7</span>
+                            Jaminan Masuk Surga dan Akhir Hayat (Tahun 51 Hijriah)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">51 H / Wafat</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-star text-gold-600 mr-2"></i>Dijamin Masuk Surga (Al-'Asyr al-Mubasysyirun bil Jannah):</h4>
+                            <p class="text-sm sm:text-base">
+                                Keutamaan paling puncak yang memahat nama Sa'id bin Zaid dalam sejarah Islam adalah ketetapan wahyu tentang dirinya. Beliau merupakan salah satu dari <strong>Al-'Asyrah al-Mubasysyiruna bil Jannah</strong>—yaitu sepuluh sahabat yang dijamin masuk surga dalam satu majelis oleh Rasulullah SAW. Dalam hadis shahih (HR. Ahmad, Tirmidzi, Abu Dawud), Rasulullah SAW menyebutkan nama-nama mereka termasuk Sa'id bin Zaid. Ketika para sahabat mendesak siapa orang kesepuluh, Sa'id dengan rendah hati awalnya diam, lalu menjawab bahwa dirinyalah orang kesepuluh tersebut.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-moon text-gold-600 mr-2"></i>Wafat di al-Aqiq dan Pemakaman di Baqi':</h4>
+                            <p class="text-sm sm:text-base">
+                                Sa'id bin Zaid menghabiskan sisa usianya dengan menjauhi fitnah perebutan kekuasaan, berfokus pada ibadah, mengajarkan hadis, dan memberi teladan ketakwaan. Beliau wafat di wilayah al-Aqiq (dekat Madinah) pada tahun 51 Hijriah dalam usia sekitar 70-an tahun. Jasad beliau dimandikan dan dishalatkan oleh sahabat Sa'ad bin Abi Waqqas serta Abdullah bin Umar radhiyallahu 'anhum, lalu diantar dengan penuh penghormatan menuju pemakaman Baqi' di Madinah Al-Munawwarah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 2: POSTER DIGITAL -->
+        <section id="tab-poster" class="tab-content hidden space-y-6">
+            <!-- Poster Actions -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-md border border-parchment-200 no-print">
+                <p class="text-sm text-slate-600">Poster visual siap cetak / simpan PDF dari ringkasan biografi.</p>
+                <button onclick="window.print()" class="bg-emerald-800 hover:bg-emerald-900 text-amber-200 px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center">
+                    <i class="fa-solid fa-print mr-2"></i> Cetak / Simpan PDF Poster
+                </button>
+            </div>
+
+            <!-- Poster Canvas Container -->
+            <div class="poster-card pattern-bg text-amber-100 p-6 sm:p-10 rounded-2xl shadow-2xl border-8 double border-gold-600 max-w-4xl mx-auto space-y-8">
+                <!-- Poster Header -->
+                <div class="text-center space-y-2 border-b border-gold-600/40 pb-6">
+                    <div class="inline-block p-3 rounded-full bg-gold-600/20 text-gold-400 mb-2">
+                        <i class="fa-solid fa-star-and-crescent text-4xl"></i>
+                    </div>
+                    <p class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Infografis & Poster Tokoh Islam</p>
+                    <h2 class="text-3xl sm:text-5xl font-black text-amber-200 tracking-tight">SA'ID BIN ZAID</h2>
+                    <p class="text-2xl font-arabic text-gold-400">سعيد بن زيد — (رضي الله عنه)</p>
+                    <p class="text-sm font-medium text-emerald-200 max-w-xl mx-auto mt-2">
+                        Termasuk As-Sabiqunal Awwalun, Perantara Hidayah Umar bin al-Khattab, & Dijamin Masuk Surga.
+                    </p>
+                </div>
+
+                <!-- Poster Grid Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <!-- Column 1 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">1. Silsilah & Keluarga</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                <strong>Nasab:</strong> Sa'id bin Zaid bin Amru bin Nufail al-Adawi al-Qurasyi.<br>
+                                <strong>Ayah:</strong> Zaid bin Amru (tokoh tauhid pra-Islam).<br>
+                                <strong>Pasangan:</strong> Fatimah binti al-Khattab (saudari Umar).
+                            </p>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">2. Peran & Keutamaan</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>As-Sabiqunal Awwalun:</strong> Masuk Islam di usia belia.</li>
+                                <li><strong>Al-Badari:</strong> Diberi pahala penuh Perang Badar meski bertugas intelijen.</li>
+                                <li><strong>Dijamin Surga:</strong> Termasuk 10 sahabat yang dijamin masuk surga.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">3. Kiprah & Keteladanan</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Singa Yarmuk:</strong> Pemberani yang melumpuhkan panglima musuh.</li>
+                                <li><strong>Mustajabud Da'wah:</strong> Doanya terkabul saat dizalimi (kasus Arwa binti Aus).</li>
+                                <li><strong>Ikhlas:</strong> Sangat pandai menyembunyikan amal kebajikannya.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">4. Akhir Hayat (51 H)</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                Wafat di usia sekitar 70-an tahun di al-Aqiq. Dimakamkan di pemakaman Baqi', Madinah Al-Munawwarah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster Footer Quote -->
+                <div class="text-center pt-4 border-t border-gold-600/30">
+                    <p class="text-xs font-serif text-amber-300 italic">
+                        "Abu Bakar di surga, Umar di surga... dan Sa'id bin Zaid di surga."
+                    </p>
+                    <p class="text-[10px] text-gold-500 uppercase tracking-widest mt-1">— Sabda Rasulullah SAW (HR. Tirmidzi)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: GARIS WAKTU / TIMELINE -->
+        <section id="tab-timeline" class="tab-content hidden space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 mb-6">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-2">Kronologi Garis Waktu Sejarah</h3>
+                <p class="text-slate-600 text-sm">Perjalanan hidup Sa'id bin Zaid (ra) dari masa awal Islam hingga wafatnya.</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-4 border-gold-600 ml-4 sm:ml-32 space-y-8">
+
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Pra-Kenabian
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Pra-Kenabian</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Lahir & Didikan Tauhid</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Tumbuh di bawah didikan ayahnya, Zaid bin Amru, yang menolak penyembahan berhala di Makkah.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Masa Makkah
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Masa Makkah</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Masuk Islam & Perantara Keislaman Umar</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Masuk Islam di usia muda bersama istrinya, Fatimah. Rumah mereka menjadi jalan hidayah bagi Umar bin al-Khattab.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        2 H / 624 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">2 H / 624 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Misi Intelijen Perang Badar</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Menjalankan tugas khusus memantau kafilah Abu Sufyan dan tetap diberi pahala Badar oleh Rasulullah SAW.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Masa Khulafaur Rasyidin
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Masa Khulafaur Rasyidin</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Pertempuran Yarmuk & Penaklukan Syam</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Berperan sebagai singa di medan Yarmuk dan menolak jabatan gubernur demi fokus berjihad di garis depan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        51 H / 671 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">51 H / 671 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Wafat di al-Aqiq & Dimakamkan di Baqi'</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Wafat pada usia 70-an tahun di al-Aqiq dan dimakamkan di pemakaman Baqi', Madinah.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 4: CATATAN SAYA (FITUR BARU) -->
+        <section id="tab-catatan" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1"><i class="fa-solid fa-pen-to-square text-gold-600 mr-2"></i>Catatan Pribadi Anda</h3>
+                <p class="text-slate-600 text-sm">Tulis poin-poin penting, faedah, atau kesimpulan dari materi Sa'id bin Zaid. Catatan ini akan otomatis tersimpan di perangkat Anda.</p>
+            </div>
+
+            <!-- Note Input Card -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <div>
+                    <label for="note-title" class="block text-xs font-bold text-slate-600 uppercase mb-1">Judul Catatan</label>
+                    <input type="text" id="note-title" placeholder="Contoh: Faedah Ikhlas dari Sa'id bin Zaid" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
+                </div>
+                <div>
+                    <label for="note-content" class="block text-xs font-bold text-slate-600 uppercase mb-1">Isi Catatan</label>
+                    <textarea id="note-content" rows="4" placeholder="Tulis catatan atau rangkuman Anda di sini..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm"></textarea>
+                </div>
+                <div class="flex justify-end space-x-2">
+                    <button onclick="clearNoteForm()" class="px-4 py-2 bg-slate-200 text-slate-700 hover:bg-slate-300 rounded-lg text-sm font-semibold transition">
+                        Reset
+                    </button>
+                    <button onclick="saveNote()" class="px-5 py-2 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg text-sm font-semibold transition flex items-center">
+                        <i class="fa-solid fa-floppy-disk mr-2"></i> Simpan Catatan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Saved Notes List -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <h4 class="text-lg font-bold text-emerald-950 border-b border-slate-100 pb-2 flex items-center justify-between">
+                    <span>Daftar Catatan Tersimpan</span>
+                    <span id="note-count" class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">0 Catatan</span>
+                </h4>
+                <div id="notes-container" class="space-y-3">
+                    <!-- Catatan akan dimuat melalui JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: KUIS INTERAKTIF -->
+        <section id="tab-kuis" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 text-center">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1">Kuis Pengetahuan Sahabat</h3>
+                <p class="text-slate-600 text-sm">Uji pemahaman Anda mengenai sejarah dan keutamaan Sa'id bin Zaid (ra).</p>
+            </div>
+
+            <!-- Quiz Card -->
+            <div id="quiz-container" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-parchment-200 space-y-6">
+                <!-- Progress & Score Header -->
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                    <span id="quiz-progress" class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Pertanyaan 1 dari 5</span>
+                    <span id="quiz-score" class="text-xs font-bold text-gold-700 bg-amber-100 px-3 py-1 rounded-full">Skor: 0</span>
+                </div>
+
+                <!-- Question Text -->
+                <h4 id="quiz-question" class="text-lg sm:text-xl font-bold text-slate-800">
+                    <!-- Loaded via JS -->
+                </h4>
+
+                <!-- Options -->
+                <div id="quiz-options" class="space-y-3">
+                    <!-- Options buttons loaded via JS -->
+                </div>
+
+                <!-- Explanation Box -->
+                <div id="quiz-explanation" class="hidden p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm space-y-1">
+                    <span id="explanation-status" class="font-bold block"></span>
+                    <p id="explanation-text" class="text-slate-700"></p>
+                </div>
+
+                <!-- Next Button -->
+                <button id="quiz-next-btn" onclick="nextQuestion()" class="hidden w-full py-3 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg font-bold text-center transition">
+                    Lanjut ke Pertanyaan Berikutnya <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Quiz Result Card (Hidden Initially) -->
+            <div id="quiz-result" class="hidden bg-white p-8 rounded-xl shadow-xl border border-parchment-200 text-center space-y-6">
+                <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto text-gold-600 text-4xl shadow-inner">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-emerald-950">Kuis Selesai!</h3>
+                    <p class="text-slate-600 text-sm mt-1">Terima kasih telah mempelajari biografi Sa'id bin Zaid (ra).</p>
+                </div>
+                <div class="bg-parchment-100 p-4 rounded-lg inline-block">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Skor Akhir Anda</p>
+                    <p id="final-score" class="text-4xl font-black text-emerald-900 mt-1">0 / 100</p>
+                </div>
+                <div>
+                    <button onclick="resetQuiz()" class="px-6 py-2.5 bg-emerald-900 text-amber-200 rounded-lg font-bold hover:bg-emerald-800 transition">
+                        <i class="fa-solid fa-rotate-right mr-2"></i> Coba Kuis Lagi
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-amber-200/80 text-xs text-center py-6 border-t border-gold-600/30 no-print">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p class="font-medium">Aplikasi Biografi Lengkap & Interaktif Sa'id bin Zaid (ra)</p>
+            <p class="text-amber-100/50">Dirancang dengan tema Islamic Gold & Parchment untuk kemudahan pembacaan dan pembelajaran.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Tab Navigation System
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+                tab.classList.remove('block');
+            });
+
+            const activeTab = document.getElementById('tab-' + tabId);
+            if (activeTab) {
+                activeTab.classList.remove('hidden');
+                activeTab.classList.add('block');
+            }
+
+            const navIds = ['biografi', 'poster', 'timeline', 'catatan', 'kuis'];
+            navIds.forEach(id => {
+                const btn = document.getElementById('nav-' + id);
+                if (btn) {
+                    if (id === tabId) {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40 font-semibold";
+                    } else {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 font-normal";
+                    }
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Biography Search Filter
+        function filterBiography() {
+            const input = document.getElementById('biography-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.bio-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Chapter Category Filter
+        function filterChapter(babClass) {
+            const cards = document.querySelectorAll('.bio-card');
+            const btns = document.querySelectorAll('.chapter-btn');
+
+            btns.forEach(btn => {
+                btn.className = "chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+            });
+
+            event.target.className = "chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition";
+
+            cards.forEach(card => {
+                if (babClass === 'all') {
+                    card.style.display = "block";
+                } else {
+                    if (card.classList.contains(babClass)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                }
+            });
+        }
+
+        // --- FITUR CATATAN (LOCALSTORAGE) ---
+        function getSavedNotes() {
+            let notes = localStorage.getItem('said_bin_zaid_notes');
+            return notes ? JSON.parse(notes) : [];
+        }
+
+        function saveNote() {
+            const titleInput = document.getElementById('note-title');
+            const contentInput = document.getElementById('note-content');
+            
+            const title = titleInput.value.trim();
+            const content = contentInput.value.trim();
+
+            if (!title || !content) {
+                alert('Judul dan isi catatan tidak boleh kosong!');
+                return;
+            }
+
+            const newNote = {
+                id: Date.now(),
+                title: title,
+                content: content,
+                date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+            };
+
+            let notes = getSavedNotes();
+            notes.unshift(newNote); // Tambahkan ke awal array
+            localStorage.setItem('said_bin_zaid_notes', JSON.stringify(notes));
+
+            titleInput.value = '';
+            contentInput.value = '';
+            loadNotes();
+            alert('Catatan berhasil disimpan!');
+        }
+
+        function deleteNote(id) {
+            if (confirm('Apakah Anda yakin ingin menghapus catatan ini?')) {
+                let notes = getSavedNotes();
+                notes = notes.filter(note => note.id !== id);
+                localStorage.setItem('said_bin_zaid_notes', JSON.stringify(notes));
+                loadNotes();
+            }
+        }
+
+        function clearNoteForm() {
+            document.getElementById('note-title').value = '';
+            document.getElementById('note-content').value = '';
+        }
+
+        function loadNotes() {
+            const notes = getSavedNotes();
+            const container = document.getElementById('notes-container');
+            const countBadge = document.getElementById('note-count');
+
+            countBadge.innerText = `${notes.length} Catatan`;
+            container.innerHTML = '';
+
+            if (notes.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">Belum ada catatan yang tersimpan.</p>`;
+                return;
+            }
+
+            notes.forEach(note => {
+                const noteCard = document.createElement('div');
+                noteCard.className = "p-4 rounded-lg bg-parchment-50 border border-parchment-200 space-y-2 relative group";
+                noteCard.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <h5 class="font-bold text-emerald-950 text-base">${escapeHtml(note.title)}</h5>
+                        <button onclick="deleteNote(${note.id})" class="text-red-500 hover:text-red-700 text-xs px-2 py-1 rounded transition" title="Hapus Catatan">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-500 font-mono">${note.date}</p>
+                    <p class="text-sm text-slate-700 whitespace-pre-line leading-relaxed">${escapeHtml(note.content)}</p>
+                `;
+                container.appendChild(noteCard);
+            });
+        }
+
+        // Helper untuk mencegah XSS sederhana pada catatan
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+
+        // --- KUIS INTERAKTIF ---
+        const quizQuestions = [
+            {
+                question: "Siapakah nama istri Sa'id bin Zaid yang merupakan saudari kandung dari Umar bin al-Khattab?",
+                options: [
+                    "Aisyah binti Abu Bakar",
+                    "Fatimah binti al-Khattab",
+                    "Hafsah binti Umar",
+                    "Ummu Habibah"
+                ],
+                correct: 1,
+                explanation: "Sa'id bin Zaid menikah dengan Fatimah binti al-Khattab, yang rumah tangganya menjadi tempat awal pembacaan Al-Qur'an sebelum Umar bin al-Khattab masuk Islam."
+            },
+            {
+                question: "Mengapa Sa'id bin Zaid tidak ikut serta secara fisik di barisan utama Perang Badar?",
+                options: [
+                    "Beliau sedang sakit di Madinah",
+                    "Beliau diutus Rasulullah SAW untuk misi intelijen memantau kafilah dagang Abu Sufyan",
+                    "Beliau terlambat datang dari Makkah",
+                    "Beliau ditugaskan menjaga kota Madinah"
+                ],
+                correct: 1,
+                explanation: "Sebelum Perang Badar, Sa'id bin Zaid bersama Talhah bin Ubaidillah ditugaskan Rasulullah SAW untuk melacak pergerakan kafilah dagang Abu Sufyan, namun beliau tetap diberi pahala Badar."
+            },
+            {
+                question: "Sifat atau keutamaan apakah yang membuat kisah personal Sa'id bin Zaid jarang terekspos secara masif dalam sejarah?",
+                options: [
+                    "Beliau jarang ikut berperang",
+                    "Beliau sangat pandai menyembunyikan amal ibadahnya",
+                    "Beliau tinggal di tempat terpencil",
+                    "Catatan sejarah zamannya musnah"
+                ],
+                correct: 1,
+                explanation: "Para ulama menjelaskan bahwa Sa'id bin Zaid adalah pahlawan sunyi yang sangat ikhlas dan piawai dalam menyembunyikan amal kebaikannya dari pandangan manusia."
+            },
+            {
+                question: "Peristiwa apa yang membuktikan bahwa doa Sa'id bin Zaid sangat mustajab (dikabulkan Allah)?",
+                options: [
+                    "Turunnya hujan saat kemarau panjang",
+                    "Doa terhadap Arwa binti Aus yang menuduhnya zalim atas sengketa tanah",
+                    "Kemenangan telak pasukan muslim di Yaman",
+                    "Sembuhnya mata Umar yang sakit"
+                ],
+                correct: 1,
+                explanation: "Ketika difitnah secara zalim oleh Arwa binti Aus terkait patok tanah, Sa'id berdoa agar wanita itu buta dan tewas di sumurnya, yang kemudian dikabulkan Allah SWT."
+            },
+            {
+                question: "Di kota manakah Sa'id bin Zaid wafat pada tahun 51 Hijriah?",
+                options: [
+                    "Makkah al-Mukarramah",
+                    "Damaskus, Syam",
+                    "Madinah al-Munawwarah (dimakamkan di Baqi')",
+                    "Yerusalem, Palestina"
+                ],
+                correct: 2,
+                explanation: "Sa'id bin Zaid wafat di al-Aqiq pada tahun 51 Hijriah, lalu jenazahnya dibawa ke Madinah dan dimakamkan di pemakaman Baqi'."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizQuestions[currentQuestion];
+            document.getElementById('quiz-progress').innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizQuestions.length}`;
+            document.getElementById('quiz-question').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+
+            document.getElementById('quiz-explanation').classList.add('hidden');
+            document.getElementById('quiz-next-btn').classList.add('hidden');
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 font-medium text-sm transition flex items-center justify-between";
+                btn.innerHTML = `<span>${String.fromCharCode(65 + idx)}. ${opt}</span> <i class="fa-regular fa-circle text-slate-300"></i>`;
+                btn.onclick = () => checkAnswer(idx, btn);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIdx, btnElement) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizQuestions[currentQuestion];
+            const optionsBtns = document.getElementById('quiz-options').children;
+
+            if (selectedIdx === q.correct) {
+                score += 20;
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-100 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-check text-emerald-700 text-lg";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Benar!";
+                document.getElementById('explanation-status').className = "font-bold text-emerald-800 block";
+            } else {
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-red-400 bg-red-50 text-red-900 font-medium text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-xmark text-red-600 text-lg";
+
+                optionsBtns[q.correct].className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Kurang Tepat";
+                document.getElementById('explanation-status').className = "font-bold text-red-700 block";
+            }
+
+            document.getElementById('quiz-score').innerText = `Skor: ${score}`;
+            document.getElementById('explanation-text').innerText = q.explanation;
+            document.getElementById('quiz-explanation').classList.remove('hidden');
+            document.getElementById('quiz-next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('final-score').innerText = `${score} / 100`;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-score').innerText = `Skor: 0`;
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        window.onload = function() {
+            loadQuestion();
+            loadNotes(); // Muat catatan saat halaman dibuka
+        };
+    </script>
+</body>
+</html>

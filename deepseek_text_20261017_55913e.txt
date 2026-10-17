@@ -1,0 +1,7 @@
+📁 biografi-sahabat/
+├── 📄 index.html          ← file induk (kode di bawah)
+├── 📄 Abu Ubaidah bin al-Jarrah.html
+├── 📄 Abdurrahman bin Auf.html
+├── 📄 Sa'ad bin Abi Waqqash.html
+├── 📄 Sa'id bin Zaid.html
+└── 📄 Abu Ubaidah.html    ← (duplikat, bisa dihapus jika tidak perlu)

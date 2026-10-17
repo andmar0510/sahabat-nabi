@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi & Kisah Lengkap Sa'ad bin Abi Waqqash (ra) - Sang Panglima</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        parchment: {
+                            50: '#fdfbf7',
+                            100: '#f7f3e9',
+                            200: '#ebe3d1',
+                            800: '#3e382d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arabic-text {
+            font-family: 'Amiri', serif;
+        }
+        .pattern-bg {
+            background-color: #022c22;
+            background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #022c22 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.95;
+        }
+        .poster-border {
+            border: 12px double #d97706;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .poster-card {
+                box-shadow: none !important;
+                border: 2px solid #000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-parchment-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar Sticky -->
+    <header class="sticky top-0 z-50 bg-emerald-950/95 backdrop-blur-md text-amber-100 border-b border-gold-600/30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-600 to-amber-300 flex items-center justify-center text-emerald-950 text-xl font-bold shadow-md">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-wide text-amber-200 leading-tight">Sa'ad bin Abi Waqqash <span class="text-xs text-gold-400 font-normal">(ra)</span></h1>
+                    <p class="text-xs text-emerald-300 font-arabic tracking-widest">سعد بن أبي وقاص — Panglima & Sahabat Dijamin Surga</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                <button onclick="switchTab('biografi')" id="nav-biografi" class="px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> Biografi Lengkap
+                </button>
+                <button onclick="switchTab('poster')" id="nav-poster" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-scroll mr-1.5"></i> Poster Digital
+                </button>
+                <button onclick="switchTab('timeline')" id="nav-timeline" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-timeline mr-1.5"></i> Garis Waktu
+                </button>
+                <button onclick="switchTab('catatan')" id="nav-catatan" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-pen-to-square mr-1.5"></i> Catatan Saya
+                </button>
+                <button onclick="switchTab('kuis')" id="nav-kuis" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> Kuis Interaktif
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-amber-300 hover:text-white text-2xl focus:outline-none p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-950 border-b border-gold-600/30 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="switchTab('biografi'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-amber-300 bg-emerald-900/60 font-medium">
+                <i class="fa-solid fa-book-open mr-2"></i> Biografi Lengkap
+            </button>
+            <button onclick="switchTab('poster'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-scroll mr-2"></i> Poster Digital
+            </button>
+            <button onclick="switchTab('timeline'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-timeline mr-2"></i> Garis Waktu
+            </button>
+            <button onclick="switchTab('catatan'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-pen-to-square mr-2"></i> Catatan Saya
+            </button>
+            <button onclick="switchTab('kuis'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-graduation-cap mr-2"></i> Kuis Interaktif
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- TAB 1: BIOGRAFI LENGKAP -->
+        <section id="tab-biografi" class="tab-content block space-y-8">
+            <!-- Hero Banner -->
+            <div class="pattern-bg rounded-2xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden border border-gold-500/30">
+                <div class="max-w-3xl relative z-10 space-y-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/20 text-gold-400 border border-gold-500/40">
+                        <i class="fa-solid fa-star mr-1.5 text-xs"></i> Al-'Asyarah al-Mubasysyarun bil Jannah
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-amber-200 tracking-tight">
+                        Sa'ad bin Abi Waqqash <span class="text-2xl sm:text-3xl font-normal text-gold-400">(رضي الله عنه)</span>
+                    </h2>
+                    <p class="text-amber-100/90 text-base sm:text-lg leading-relaxed font-light">
+                        "Inilah pamanku (dari pihak ibu). Maka, hendaklah setiap orang memperlihatkan kepadaku siapa pamannya!"
+                        <span class="block mt-1 text-sm text-gold-400 italic">— Sabda Rasulullah SAW (HR. Tirmidzi & Al-Hakim)</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Category Filter -->
+            <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border border-parchment-200 flex flex-col md:flex-row gap-4 items-center justify-between">
+                <!-- Search Input -->
+                <div class="relative w-full md:w-1/2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="biography-search" onkeyup="filterBiography()" placeholder="Cari peristiwa, tempat, atau kata kunci (cth: Persia, Qadisiyah, Qana'ah, Uhud)..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:border-transparent text-sm">
+                </div>
+
+                <!-- Chapter Filter Buttons -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto">
+                    <button onclick="filterChapter('all')" class="chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition">Semua Bab</button>
+                    <button onclick="filterChapter('bab1')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 1</button>
+                    <button onclick="filterChapter('bab2')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 2</button>
+                    <button onclick="filterChapter('bab3')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 3</button>
+                    <button onclick="filterChapter('bab4')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 4</button>
+                    <button onclick="filterChapter('bab5')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 5</button>
+                    <button onclick="filterChapter('bab6')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 6</button>
+                    <button onclick="filterChapter('bab7')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 7</button>
+                </div>
+            </div>
+
+            <!-- Biography Chapters (Detailed Explanations) -->
+            <div id="biography-container" class="space-y-6">
+
+                <!-- BAB 1 -->
+                <div class="bio-card bab1 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">1</span>
+                            Nasab, Silsilah Sempurna, dan Hubungan Kekerabatan dengan Nabi ﷺ
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Nasab & Profil</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-dna text-gold-600 mr-2"></i>Garis Keturunan dan Silsilah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Nama lengkap beliau adalah <strong>Sa’ad bin Malik bin Uhaib (Wohaib) bin Abdi Manaf bin Zuhrah bin Kilab bin Murrah al-Qurasyi az-Zuhri</strong> dengan kunyah (julukan) Abu Ishaq. Ayah beliau, Malik bin Uhaib, lebih dikenal di kalangan suku Quraisy dengan julukan <strong>Abu Waqqash</strong>. Menariknya, Malik merupakan sepupu kandung dari Aminah binti Wahab, ibunda tercinta Rasulullah SAW. Titik temu silsilah Sa’ad dengan Rasulullah SAW terletak pada kakek kelima mereka, yaitu Kilab bin Murrah. Hal inilah yang menjadikan Sa'ad memiliki ikatan kekerabatan darah yang sangat dekat dengan Nabi.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-crown text-gold-600 mr-2"></i>Kebanggaan Rasulullah SAW (Sang Paman):</h4>
+                            <p class="text-sm sm:text-base">
+                                Karena Sa’ad berasal dari kabilah Bani Zuhrah (kabilah asal ibunda Nabi), Rasulullah SAW menganggap seluruh keturunan Bani Zuhrah sebagai paman dari jalur ibu (<em>khal</em>). Dalam sebuah riwayat shahih yang disepakati oleh para ahli hadis, ketika Sa’ad sedang berjalan melintas di hadapan majelis Nabi SAW, Rasulullah tersenyum bangga dan bersabda kepada para sahabat di sekitarnya: <em>"Inilah pamanku (dari pihak ibu). Maka, hendaklah setiap orang memperlihatkan kepada kita siapa pamannya!"</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 2 -->
+                <div class="bio-card bab2 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">2</span>
+                            Hidayah di Usia Muda, Mimpi Rembulan, dan Ujian Sang Ibu
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">As-Sabiqunal Awwalun</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-star text-gold-600 mr-2"></i>Masuk Islam Usia 17 Tahun:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sa’ad memeluk Islam di Makkah pada usia yang sangat muda, yakni <strong>17 tahun</strong>, melalui dakwah langsung dari Abu Bakar ash-Shiddiq radhiyallahu 'anhu. Beliau masuk Islam bersamaan dengan empat tokoh utama lainnya: Utsman bin Affan, Zubair bin Awwam, Thalhah bin Ubaidillah, dan Abdurrahman bin Auf. Sa'ad pernah mendeskripsikan posisinya di masa awal Islam dengan perkataan: <em>"Sungguh, aku telah melewati suatu hari di mana aku adalah sepertiga dari Islam (orang ketiga yang masuk Islam di luar lingkup keluarga inti Nabi)."</em>
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-moon text-gold-600 mr-2"></i>Mimpi Pertanda Cahaya Rembulan:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sebelum mengenal Islam secara langsung, Sa’ad mengalami mimpi yang sangat membekas di jiwanya. Beliau bermimpi berada di dalam kegelapan pekat yang berlapis-lapis dan mencekam. Tiba-tiba, terpancar cahaya rembulan yang sangat terang benderang. Sa’ad berjalan mengikuti cahaya tersebut hingga mendapati tiga orang telah tiba terlebih dahulu di sana, yaitu Zaid bin Haritsah, Ali bin Abi Thalib, dan Abu Bakar ash-Shiddiq. Pagi harinya, begitu mendengar dakwah Rasulullah SAW, Sa’ad langsung menyadari arti mimpinya dan bersyahadat tanpa keraguan sedikit pun.
+                            </p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-shield-heart text-gold-600 mr-2"></i>Aksi Mogok Makan Sang Ibu dan Surah Luqman Ayat 15:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ibunda Sa’ad (Hamna binti Sufyan) sangat terpukul saat mengetahui putranya memeluk Islam. Mengingat Sa'ad terkenal sebagai anak yang sangat berbakti, ibunya melancarkan aksi mogok makan, minum, dan berteduh di bawah terik matahari Makkah selama tiga hari berturut-turut hingga pingsan dan kritis. Orang-orang Quraisy menekan emosi Sa'ad agar tunduk pada sang ibu. 
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Namun, dengan keteguhan iman yang luar biasa, Sa’ad mendatangi ibunya yang lemas dan berkata dengan santun namun tegas: <em>"Wahai Ibunda, ketahuilah demi Allah! Seandainya engkau memiliki 100 nyawa, lalu nyawa itu keluar satu per satu di hadapanku, aku tidak akan pernah meninggalkan agamaku ini untuk alasan apa pun. Jika engkau mau makan, makanlah. Jika tidak, itu pilihanmu."</em> Melihat keteguhan tersebut, sang ibu akhirnya menyerah. Peristiwa ini diabadikan dalam <strong>Surah Luqman ayat 15</strong>, yang memerintahkan untuk tetap berbakti kepada orang tua namun menolak jika mereka menyuruh berbuat syirik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 3 -->
+                <div class="bio-card bab3 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">3</span>
+                            Pemanah Pertama, Doa Mustajab, dan Penebusan Uhud
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Keutamaan Militer</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-bullseye text-gold-600 mr-2"></i>Pemanah Pertama dan Penumpah Darah Musyrik Pertama:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada fase dakwah sembunyi-sembunyi di celah bukit Makkah, saat kaum musyrikin menyerang kaum muslimin yang sedang beribadah, Sa'ad mengambil tulang rahang unta lalu menghantamkannya ke wajah musuh hingga berdarah—menjadikannya orang pertama yang menumpahkan darah musyrik demi membela Islam. Selain itu, beliau adalah prajurit pertama yang melepaskan anak panah dalam membela agama Allah pada ekspedisi militer (sariyyah) sebelum Perang Badar.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hand-holding-heart text-gold-600 mr-2"></i>Jaminan Khusus Nabi pada Perang Uhud:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada Perang Uhud, ketika barisan musuh mendesak posisi Nabi SAW, Sa’ad berdiri gagah membentengi Rasulullah dengan bidikan panahnya yang sangat akurat. Rasulullah SAW mengumpulkan anak panah dan menyerahkannya kepada Sa’ad seraya bersabda: <em>"Memanahlah wahai Sa'ad! Ayah dan ibuku sebagai jaminan bagimu!"</em> Para sejarawan mencatat bahwa Nabi SAW tidak pernah menyebutkan jaminan kedua orang tuanya sekaligus untuk sahabat mana pun kecuali kepada Sa'ad bin Abi Waqqash.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hands-praying text-gold-600 mr-2"></i>Doa Nabi yang Mustajab:</h4>
+                            <p class="text-sm sm:text-base">
+                                Rasulullah SAW pernah memegang pundak Sa’ad dan mendoakannya secara khusus: <em>"Ya Allah, tepatkanlah bidikan panahnya dan kabulkanlah doanya."</em> Sejak hari itu, doa Sa'ad dikenal sangat makbul dan ditakuti oleh orang-orang yang berlaku zalim kepadanya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 4 -->
+                <div class="bio-card bab4 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">4</span>
+                            Panglima Penakluk Persia (Perang Qadisiyah & Pembebasan Madain)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Panglima Perang</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-chess-rook text-gold-600 mr-2"></i>Penunjukan sebagai Panglima Tertinggi:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada masa Kekhalifahan Umar bin al-Khattab, ketika ancaman militer dari Imperium Persia memuncak, Khalifah Umar menunjuk Sa’ad bin Abi Waqqash sebagai Panglima Tertinggi untuk memimpin 30.000 pasukan muslimin menghadapi 240.000 prajurit Persia di bawah pimpinan Panglima Rustam dalam <strong>Perang Qadisiyah</strong> (15 H).
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-shield-halved text-gold-600 mr-2"></i>Strategi Brilian di Atas Medan Tempur:</h4>
+                            <p class="text-sm sm:text-base">
+                                Saat perang meletus, Sa’ad menderita sakit bisul yang sangat parah di sekujur tubuhnya hingga tidak mampu duduk di atas punggung kuda. Namun, semangat kepemimpinannya tidak padam. Beliau merebahkan dadanya di atas bantal di menara istana pengawas, lalu menulis instruksi taktis dan melemparkannya kepada para komandan lapangan. Berkat strategi jenius tersebut, pasukan gajah Persia berhasil dilumpuhkan dan kemenangan gemilang diraih umat Islam.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-water text-gold-600 mr-2"></i>Menyeberangi Sungai Tigris dan Penaklukan Istana Madain:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pasukan Sa'ad terus mengejar musuh hingga ke ibu kota Persia, Madain. Ketika mendapati jembatan Sungai Tigris dihancurkan musuh dan airnya meluap sangat deras, Sa’ad membaca doa penyerahan diri lalu memerintahkan seluruh pasukan berkuda untuk melompat menerobos sungai. Pasukan Islam menyeberang derasnya air seolah berjalan di atas daratan. Tentara Persia yang melihat kejadian itu lari ketakutan sambil berteriak: <em>"Diwana! Diwana! (Mereka bukan manusia, melainkan jin!)"</em> Istana Putih Kisra pun berhasil dikuasai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 5 -->
+                <div class="bio-card bab5 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">5</span>
+                            Kekayaan Harta, Wasiat Haji Wada', dan Nasihat Qana'ah
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Zuhud & Harta</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-scale-balanced text-gold-600 mr-2"></i>Batasan Wasiat Sepertiga Harta:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada peristiwa Haji Wada' (10 H), Sa’ad jatuh sakit keras di Makkah dan menyangka ajalnya sudah dekat. Karena memiliki harta melimpah namun hanya dikaruniai seorang putri, Sa'ad meminta izin Nabi SAW untuk menyedekahkan 2/3 hartanya. Nabi melarang. Sa'ad menawar 1/2, Nabi tetap melarang. Akhirnya Nabi memperbolehkan maksimal **sepertiga (1/3)** seraya bersabda: <em>"Sepertiga itu sudah banyak. Sesungguhnya engkau meninggalkan ahli warismu dalam keadaan berkecukupan adalah lebih baik daripada meninggalkan mereka dalam keadaan miskin meminta-minta kepada manusia."</em> (HR. Bukhari & Muslim).
+                            </p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-gem text-gold-600 mr-2"></i>Nasihat Emas tentang Qana'ah kepada Anak:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sebagai sahabat kaya raya yang dijamin masuk surga, Sa’ad mengajarkan rahasia kebahagiaan finansial dan mental kepada anak-anaknya melalui petuah luhur: <em>"Wahai anakku, jika engkau ingin mencari kekayaan, maka carilah dengan sifat <strong>qana'ah</strong> (merasa cukup dan ridha terhadap pemberian Allah). Sebab qana'ah adalah harta yang tidak akan pernah habis. Jauhilah ketamakan, karena ketamakan adalah kemiskinan yang nyata."</em> Beliau menegaskan bahwa kekayaan sejati bukanlah tentang angka aset, melainkan kekayaan jiwa (<em>ghina an-nafs</em>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 6 -->
+                <div class="bio-card bab6 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">6</span>
+                            Sikap Netral Saat Fitnah Politik (Khafi & Taqiy)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Kebijaksanaan</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-user-shield text-gold-600 mr-2"></i>Menolak Terlibat Konflik Internal:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika terjadi perpecahan politik pasca-syahidnya Utsman bin Affan, Sa’ad bin Abi Waqqash memilih untuk bersikap netral sepenuhnya dan menolak ikut serta dalam pertumpahan darah antarsesama muslim. Beliau mengasingkan diri ke wilayah Al-Aqiq di pinggiran Madinah untuk mengurus ternak unta dan kambing miliknya.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-comment-dots text-gold-600 mr-2"></i>Pesan Mengutamakan Kesunyian dan Ketakwaan:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika putranya mendesak agar Sa'ad ikut merebut kekuasaan, Sa’ad menepuk dada sang anak sambil mengutip sabda Nabi SAW: <em>"Sesungguhnya Allah menyukai hamba yang bertakwa, merasa cukup (ghaniy), dan yang menyembunyikan diri dari pusaran fitnah dunia (khafiy)."</em> (HR. Muslim). Sa'ad juga menegaskan: <em>"Berikan aku sebilah pedang yang bisa membedakan mana mukmin dan mana kafir, baru aku akan ikut berperang!"</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 7 -->
+                <div class="bio-card bab7 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">7</span>
+                            Akhir Hayat dan Wasiat Kain Kafan Perang Badar (55 H)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">55 H / Wafat</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hourglass-end text-gold-600 mr-2"></i>Sahabat Terakhir dari Al-'Asyrah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Sa’ad bin Abi Waqqash menghabiskan sisa usianya dengan tenang di kediamannya di Al-Aqiq. Beliau wafat pada tahun <strong>55 Hijriah</strong> dalam usia sekitar 85 tahun. Beliau tercatat sebagai sahabat terakhir yang wafat dari golongan sepuluh orang yang dijamin masuk surga (<em>Al-'Asyrah al-Mubasysyirun bil-Jannah</em>).
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-shirt text-gold-600 mr-2"></i>Wasiat Jubah Perang Badar:</h4>
+                            <p class="text-sm sm:text-base">
+                                Menjelang detik-detik sakaratul mautnya, Sa’ad meminta keluarganya untuk mengeluarkan sehelai jubah wol tua yang sudah usang dari dalam lemari. Beliau berpesan dengan senyuman penuh harap: <em>"Kafanilah aku dengan kain ini. Sebab dengan kain inilah aku bertempur menghadapi kaum musyrikin pada Perang Badar. Aku telah menyimpannya puluhan tahun khusus untuk hariku hari ini."</em> Jasad beliau kemudian dibawa ke Madinah dan dimakamkan di pemakaman Baqi'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 2: POSTER DIGITAL -->
+        <section id="tab-poster" class="tab-content hidden space-y-6">
+            <!-- Poster Actions -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-md border border-parchment-200 no-print">
+                <p class="text-sm text-slate-600">Poster visual siap cetak / simpan PDF dari ringkasan biografi.</p>
+                <button onclick="window.print()" class="bg-emerald-800 hover:bg-emerald-900 text-amber-200 px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center">
+                    <i class="fa-solid fa-print mr-2"></i> Cetak / Simpan PDF Poster
+                </button>
+            </div>
+
+            <!-- Poster Canvas Container -->
+            <div class="poster-card pattern-bg text-amber-100 p-6 sm:p-10 rounded-2xl shadow-2xl border-8 double border-gold-600 max-w-4xl mx-auto space-y-8">
+                <!-- Poster Header -->
+                <div class="text-center space-y-2 border-b border-gold-600/40 pb-6">
+                    <div class="inline-block p-3 rounded-full bg-gold-600/20 text-gold-400 mb-2">
+                        <i class="fa-solid fa-feather-pointed text-4xl"></i>
+                    </div>
+                    <p class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Infografis Tokoh Teladan Islam</p>
+                    <h2 class="text-3xl sm:text-5xl font-black text-amber-200 tracking-tight">SA'AD BIN ABI WAQQASH</h2>
+                    <p class="text-2xl font-arabic text-gold-400">سعد بن أبي وقاص — (رضي الله عنه)</p>
+                    <p class="text-sm font-medium text-emerald-200 max-w-xl mx-auto mt-2">
+                        Pemanah Pertama Islam, Panglima Penakluk Persia, & Sahabat Dijamin Masuk Surga.
+                    </p>
+                </div>
+
+                <!-- Poster Grid Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <!-- Column 1 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">1. Profil & Keutamaan Utama</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                <strong>Nasab:</strong> Sa'ad bin Malik bin Uhaib az-Zuhri.<br>
+                                <strong>Hubungan Nabi:</strong> Paman dari pihak ibu (karena kabilah Bani Zuhrah).<br>
+                                <strong>Status:</strong> Termasuk 10 Sahabat Dijamin Masuk Surga (Al-'Asyrah al-Mubasysyarun bil Jannah).
+                            </p>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">2. Kontribusi Militer Utama</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Perang Uhud:</strong> Ditebus Nabi dengan kedua orang tuanya saat membentengi Nabi.</li>
+                                <li><strong>Perang Qadisiyah:</strong> Panglima yang meruntuhkan imperium Persia dengan 30.000 pasukan.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">3. Filosofi Harta & Qana'ah</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Kekayaan Jiwa:</strong> Mengajarkan bahwa kekayaan sejati terletak pada sifat qana'ah (merasa cukup).</li>
+                                <li><strong>Batasan Sedekah:</strong> Mengatur batas wasiat harta maksimal sepertiga demi kesejahteraan ahli waris.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">4. Akhir Hayat (55 H)</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                Wafat pada usia 85 tahun di Al-Aqiq sebagai sahabat terakhir dari golongan Al-'Asyrah al-Mubasysyirin bil-Jannah yang wafat, dimakamkan berkain kafan jubah Perang Badar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster Footer Quote -->
+                <div class="text-center pt-4 border-t border-gold-600/30">
+                    <p class="text-xs font-serif text-amber-300 italic">
+                        "Inilah pamanku (dari pihak ibu). Maka, hendaklah setiap orang memperlihatkan kepadaku siapa pamannya!"
+                    </p>
+                    <p class="text-[10px] text-gold-500 uppercase tracking-widest mt-1">— Sabda Rasulullah SAW (HR. Tirmidzi & Al-Hakim)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: GARIS WAKTU / TIMELINE -->
+        <section id="tab-timeline" class="tab-content hidden space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 mb-6">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-2">Kronologi Garis Waktu Sejarah</h3>
+                <p class="text-slate-600 text-sm">Jejak langkah perjuangan Sa'ad bin Abi Waqqash (ra) dari keislaman di Makkah hingga akhir hayatnya.</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-4 border-gold-600 ml-4 sm:ml-32 space-y-8">
+
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Tahun 1 Kenabian
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Tahun 1 Kenabian</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Masuk Islam di Usia 17 Tahun</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Memeluk Islam melalui perantaraan Abu Bakar ash-Shiddiq dan melewati ujian keteguhan iman terhadap ancaman ibunya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        2 H / 624 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">2 H / 624 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Perang Badar</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Ikut serta dalam Perang Badar di mana saudara kandungnya (Umair) gugur sebagai syahid di usia muda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        3 H / 625 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">3 H / 625 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Perang Uhud</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Mendapatkan jaminan tebusan ayah-ibu dari Rasulullah SAW berkat kepiawaiannya memanah dalam melindungi Nabi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        10 H / 632 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">10 H / 632 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Haji Wada' & Batasan Wasiat</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Sakit keras di Makkah saat Haji Wada' dan menerima arahan Nabi SAW mengenai batasan wasiat harta maksimal sepertiga.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        15 H / 636 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">15 H / 636 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Perang Qadisiyah & Penaklukan Persia</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Memimpin pasukan muslimin menaklukkan Persia, menyeberangi Sungai Tigris, dan menguasai Istana Putih Kisra.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        55 H / 675 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">55 H / 675 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Wafat di Al-Aqiq</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Wafat pada usia 85 tahun di Al-Aqiq dan dimakamkan di Baqi' dengan berwasiat dikafani jubah Perang Badar.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 4: CATATAN SAYA -->
+        <section id="tab-catatan" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1"><i class="fa-solid fa-pen-to-square text-gold-600 mr-2"></i>Catatan Pribadi Anda</h3>
+                <p class="text-slate-600 text-sm">Tulis poin-poin penting, faedah, atau kesimpulan dari materi Sa'ad bin Abi Waqqash. Catatan ini akan tersimpan otomatis di perangkat Anda.</p>
+            </div>
+
+            <!-- Note Input Card -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <div>
+                    <label for="note-title" class="block text-xs font-bold text-slate-600 uppercase mb-1">Judul Catatan</label>
+                    <input type="text" id="note-title" placeholder="Contoh: Faedah Qana'ah & Keteguhan Tauhid Sa'ad" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
+                </div>
+                <div>
+                    <label for="note-content" class="block text-xs font-bold text-slate-600 uppercase mb-1">Isi Catatan</label>
+                    <textarea id="note-content" rows="4" placeholder="Tulis rangkuman atau faedah hikmah Anda di sini..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm"></textarea>
+                </div>
+                <div class="flex justify-end space-x-2">
+                    <button onclick="clearNoteForm()" class="px-4 py-2 bg-slate-200 text-slate-700 hover:bg-slate-300 rounded-lg text-sm font-semibold transition">
+                        Reset
+                    </button>
+                    <button onclick="saveNote()" class="px-5 py-2 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg text-sm font-semibold transition flex items-center">
+                        <i class="fa-solid fa-floppy-disk mr-2"></i> Simpan Catatan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Saved Notes List -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <h4 class="text-lg font-bold text-emerald-950 border-b border-slate-100 pb-2 flex items-center justify-between">
+                    <span>Daftar Catatan Tersimpan</span>
+                    <span id="note-count" class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">0 Catatan</span>
+                </h4>
+                <div id="notes-container" class="space-y-3">
+                    <!-- Loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: KUIS INTERAKTIF -->
+        <section id="tab-kuis" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 text-center">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1">Kuis Pengetahuan Sahabat</h3>
+                <p class="text-slate-600 text-sm">Uji pemahaman Anda mengenai sejarah dan keutamaan Sa'ad bin Abi Waqqash (ra).</p>
+            </div>
+
+            <!-- Quiz Card -->
+            <div id="quiz-container" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-parchment-200 space-y-6">
+                <!-- Progress & Score Header -->
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                    <span id="quiz-progress" class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Pertanyaan 1 dari 5</span>
+                    <span id="quiz-score" class="text-xs font-bold text-gold-700 bg-amber-100 px-3 py-1 rounded-full">Skor: 0</span>
+                </div>
+
+                <!-- Question Text -->
+                <h4 id="quiz-question" class="text-lg sm:text-xl font-bold text-slate-800">
+                    <!-- Loaded via JS -->
+                </h4>
+
+                <!-- Options -->
+                <div id="quiz-options" class="space-y-3">
+                    <!-- Loaded via JS -->
+                </div>
+
+                <!-- Explanation Box -->
+                <div id="quiz-explanation" class="hidden p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm space-y-1">
+                    <span id="explanation-status" class="font-bold block"></span>
+                    <p id="explanation-text" class="text-slate-700"></p>
+                </div>
+
+                <!-- Next Button -->
+                <button id="quiz-next-btn" onclick="nextQuestion()" class="hidden w-full py-3 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg font-bold text-center transition">
+                    Lanjut ke Pertanyaan Berikutnya <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Quiz Result Card -->
+            <div id="quiz-result" class="hidden bg-white p-8 rounded-xl shadow-xl border border-parchment-200 text-center space-y-6">
+                <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto text-gold-600 text-4xl shadow-inner">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-emerald-950">Kuis Selesai!</h3>
+                    <p class="text-slate-600 text-sm mt-1">Terima kasih telah mempelajari biografi Sa'ad bin Abi Waqqash (ra).</p>
+                </div>
+                <div class="bg-parchment-100 p-4 rounded-lg inline-block">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Skor Akhir Anda</p>
+                    <p id="final-score" class="text-4xl font-black text-emerald-900 mt-1">0 / 100</p>
+                </div>
+                <div>
+                    <button onclick="resetQuiz()" class="px-6 py-2.5 bg-emerald-900 text-amber-200 rounded-lg font-bold hover:bg-emerald-800 transition">
+                        <i class="fa-solid fa-rotate-right mr-2"></i> Coba Kuis Lagi
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-amber-200/80 text-xs text-center py-6 border-t border-gold-600/30 no-print">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p class="font-medium">Aplikasi Biografi Lengkap & Interaktif Sa'ad bin Abi Waqqash (ra)</p>
+            <p class="text-amber-100/50">Dirancang dengan tema Islamic Gold & Parchment untuk kemudahan pembacaan dan pembelajaran.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Tab Navigation System
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+                tab.classList.remove('block');
+            });
+
+            const activeTab = document.getElementById('tab-' + tabId);
+            if (activeTab) {
+                activeTab.classList.remove('hidden');
+                activeTab.classList.add('block');
+            }
+
+            const navIds = ['biografi', 'poster', 'timeline', 'catatan', 'kuis'];
+            navIds.forEach(id => {
+                const btn = document.getElementById('nav-' + id);
+                if (btn) {
+                    if (id === tabId) {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40 font-semibold";
+                    } else {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 font-normal";
+                    }
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Biography Search Filter
+        function filterBiography() {
+            const input = document.getElementById('biography-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.bio-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Chapter Category Filter
+        function filterChapter(babClass) {
+            const cards = document.querySelectorAll('.bio-card');
+            const btns = document.querySelectorAll('.chapter-btn');
+
+            btns.forEach(btn => {
+                btn.className = "chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+            });
+
+            event.target.className = "chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition";
+
+            cards.forEach(card => {
+                if (babClass === 'all') {
+                    card.style.display = "block";
+                } else {
+                    if (card.classList.contains(babClass)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                }
+            });
+        }
+
+        // --- FITUR CATATAN (LOCALSTORAGE) ---
+        function getSavedNotes() {
+            let notes = localStorage.getItem('saad_waqqash_notes');
+            return notes ? JSON.parse(notes) : [];
+        }
+
+        function saveNote() {
+            const titleInput = document.getElementById('note-title');
+            const contentInput = document.getElementById('note-content');
+            
+            const title = titleInput.value.trim();
+            const content = contentInput.value.trim();
+
+            if (!title || !content) {
+                alert('Judul dan isi catatan tidak boleh kosong!');
+                return;
+            }
+
+            const newNote = {
+                id: Date.now(),
+                title: title,
+                content: content,
+                date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+            };
+
+            let notes = getSavedNotes();
+            notes.unshift(newNote);
+            localStorage.setItem('saad_waqqash_notes', JSON.stringify(notes));
+
+            titleInput.value = '';
+            contentInput.value = '';
+            loadNotes();
+            alert('Catatan berhasil disimpan!');
+        }
+
+        function deleteNote(id) {
+            if (confirm('Apakah Anda yakin ingin menghapus catatan ini?')) {
+                let notes = getSavedNotes();
+                notes = notes.filter(note => note.id !== id);
+                localStorage.setItem('saad_waqqash_notes', JSON.stringify(notes));
+                loadNotes();
+            }
+        }
+
+        function clearNoteForm() {
+            document.getElementById('note-title').value = '';
+            document.getElementById('note-content').value = '';
+        }
+
+        function loadNotes() {
+            const notes = getSavedNotes();
+            const container = document.getElementById('notes-container');
+            const countBadge = document.getElementById('note-count');
+
+            countBadge.innerText = `${notes.length} Catatan`;
+            container.innerHTML = '';
+
+            if (notes.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">Belum ada catatan yang tersimpan.</p>`;
+                return;
+            }
+
+            notes.forEach(note => {
+                const noteCard = document.createElement('div');
+                noteCard.className = "p-4 rounded-lg bg-parchment-50 border border-parchment-200 space-y-2 relative group";
+                noteCard.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <h5 class="font-bold text-emerald-950 text-base">${escapeHtml(note.title)}</h5>
+                        <button onclick="deleteNote(${note.id})" class="text-red-500 hover:text-red-700 text-xs px-2 py-1 rounded transition" title="Hapus Catatan">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-500 font-mono">${note.date}</p>
+                    <p class="text-sm text-slate-700 whitespace-pre-line leading-relaxed">${escapeHtml(note.content)}</p>
+                `;
+                container.appendChild(noteCard);
+            });
+        }
+
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+        // --- KUIS INTERAKTIF ---
+        const quizQuestions = [
+            {
+                question: "Apa hubungan kekerabatan antara Sa'ad bin Abi Waqqash dan Rasulullah SAW dari jalur pihak ibu?",
+                options: [
+                    "Sa'ad adalah paman Nabi dari garis ibu karena kabilah Bani Zuhrah",
+                    "Sa'ad adalah saudara sepersusuan Nabi",
+                    "Sa'ad adalah sepupu langsung dari ayah Nabi",
+                    "Sa'ad adalah keponakan dari jalur kakek Nabi"
+                ],
+                correct: 0,
+                explanation: "Rasulullah SAW menyebut Sa'ad sebagai pamannya karena ibunda Nabi (Aminah) berasal dari kabilah Bani Zuhrah, satu kabilah dengan Sa'ad."
+            },
+            {
+                question: "Berapa usia Sa'ad bin Abi Waqqash ketika beliau memeluk Islam di Makkah?",
+                options: [
+                    "12 tahun",
+                    "17 tahun",
+                    "25 tahun",
+                    "30 tahun"
+                ],
+                correct: 1,
+                explanation: "Sa'ad bin Abi Waqqash memeluk Islam pada usia yang sangat muda, yakni 17 tahun, melalui dakwah Abu Bakar ash-Shiddiq."
+            },
+            {
+                question: "Peristiwa militer penting apa yang dipimpin oleh Sa'ad bin Abi Waqqash pada masa Khalifah Umar bin al-Khattab?",
+                options: [
+                    "Penaklukan Mesir dan Alexandria",
+                    "Penaklukan Konstantinopel",
+                    "Perang Qadisiyah dan penaklukan imperium Persia",
+                    "Perang Tabuk"
+                ],
+                correct: 2,
+                explanation: "Sa'ad bin Abi Waqqash ditunjuk sebagai Panglima Tertinggi dalam Perang Qadisiyah yang berhasil meruntuhkan kekuatan imperium Persia."
+            },
+            {
+                question: "Nasihat mulia apa yang diajarkan oleh Sa'ad bin Abi Waqqash kepada anaknya terkait pencarian harta?",
+                options: [
+                    "Mencari harta sebanyak-banyaknya tanpa peduli cara halal atau haram",
+                    "Mencari harta dengan sifat qana'ah (merasa cukup dan ridha) agar hati tidak merasa miskin",
+                    "Menolak seluruh harta dunia dan hidup mengasingkan diri",
+                    "Menyerahkan seluruh harta kepada negara"
+                ],
+                correct: 1,
+                explanation: "Sa'ad berpesan agar mencari harta dengan qana'ah, karena tanpa qana'ah, berapapun harta tidak akan pernah membuat hati merasa kaya."
+            },
+            {
+                question: "Kain kafan jenis apakah yang secara khusus diwasiatkan oleh Sa'ad untuk membungkus jenazahnya sebelum wafat?",
+                options: [
+                    "Kain sutra Yaman yang mewah",
+                    "Jubah wol tua yang dipakainya saat bertempur di Perang Badar",
+                    "Kain putih biasa dari pasar Madinah",
+                    "Kain tenun hadiah dari Kaisar Persia"
+                ],
+                correct: 1,
+                explanation: "Sebelum wafat, Sa'ad berwasiat agar dikafani dengan jubah wol tua yang ia kenakan saat bertempur membela Islam di Perang Badar."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizQuestions[currentQuestion];
+            document.getElementById('quiz-progress').innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizQuestions.length}`;
+            document.getElementById('quiz-question').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+
+            document.getElementById('quiz-explanation').classList.add('hidden');
+            document.getElementById('quiz-next-btn').classList.add('hidden');
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 font-medium text-sm transition flex items-center justify-between";
+                btn.innerHTML = `<span>${String.fromCharCode(65 + idx)}. ${opt}</span> <i class="fa-regular fa-circle text-slate-300"></i>`;
+                btn.onclick = () => checkAnswer(idx, btn);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIdx, btnElement) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizQuestions[currentQuestion];
+            const optionsBtns = document.getElementById('quiz-options').children;
+
+            if (selectedIdx === q.correct) {
+                score += 20;
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-100 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-check text-emerald-700 text-lg";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Benar!";
+                document.getElementById('explanation-status').className = "font-bold text-emerald-800 block";
+            } else {
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-red-400 bg-red-50 text-red-900 font-medium text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-xmark text-red-600 text-lg";
+
+                optionsBtns[q.correct].className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Kurang Tepat";
+                document.getElementById('explanation-status').className = "font-bold text-red-700 block";
+            }
+
+            document.getElementById('quiz-score').innerText = `Skor: ${score}`;
+            document.getElementById('explanation-text').innerText = q.explanation;
+            document.getElementById('quiz-explanation').classList.remove('hidden');
+            document.getElementById('quiz-next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('final-score').innerText = `${score} / 100`;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-score').innerText = `Skor: 0`;
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        window.onload = function() {
+            loadQuestion();
+            loadNotes();
+        };
+    </script>
+</body>
+</html>

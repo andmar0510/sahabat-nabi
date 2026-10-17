@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi & Kisah Lengkap Zubair bin Al-Awwam (ra) - Hawariy Rasulullah</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        parchment: {
+                            50: '#fdfbf7',
+                            100: '#f7f3e9',
+                            200: '#ebe3d1',
+                            800: '#3e382d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arabic-text {
+            font-family: 'Amiri', serif;
+        }
+        .pattern-bg {
+            background-color: #022c22;
+            background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #022c22 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.95;
+        }
+        .poster-border {
+            border: 12px double #d97706;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .poster-card {
+                box-shadow: none !important;
+                border: 2px solid #000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-parchment-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar Sticky -->
+    <header class="sticky top-0 z-50 bg-emerald-950/95 backdrop-blur-md text-amber-100 border-b border-gold-600/30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-600 to-amber-300 flex items-center justify-center text-emerald-950 text-xl font-bold shadow-md">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-wide text-amber-200 leading-tight">Zubair bin Al-Awwam <span class="text-xs text-gold-400 font-normal">(ra)</span></h1>
+                    <p class="text-xs text-emerald-300 font-arabic tracking-widest">حواري رسول الله — Pengawal Setia Rasulullah</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                <button onclick="switchTab('biografi')" id="nav-biografi" class="px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40 font-semibold">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> Biografi Lengkap
+                </button>
+                <button onclick="switchTab('poster')" id="nav-poster" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-scroll mr-1.5"></i> Poster Digital
+                </button>
+                <button onclick="switchTab('timeline')" id="nav-timeline" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-timeline mr-1.5"></i> Garis Waktu
+                </button>
+                <button onclick="switchTab('catatan')" id="nav-catatan" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-pen-to-square mr-1.5"></i> Catatan Saya
+                </button>
+                <button onclick="switchTab('kuis')" id="nav-kuis" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> Kuis Interaktif
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-amber-300 hover:text-white text-2xl focus:outline-none p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-950 border-b border-gold-600/30 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="switchTab('biografi'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-amber-300 bg-emerald-900/60 font-medium">
+                <i class="fa-solid fa-book-open mr-2"></i> Biografi Lengkap
+            </button>
+            <button onclick="switchTab('poster'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-scroll mr-2"></i> Poster Digital
+            </button>
+            <button onclick="switchTab('timeline'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-timeline mr-2"></i> Garis Waktu
+            </button>
+            <button onclick="switchTab('catatan'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-pen-to-square mr-2"></i> Catatan Saya
+            </button>
+            <button onclick="switchTab('kuis'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-graduation-cap mr-2"></i> Kuis Interaktif
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- TAB 1: BIOGRAFI LENGKAP -->
+        <section id="tab-biografi" class="tab-content block space-y-8">
+            <!-- Hero Banner -->
+            <div class="pattern-bg rounded-2xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden border border-gold-500/30">
+                <div class="max-w-3xl relative z-10 space-y-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/20 text-gold-400 border border-gold-500/40">
+                        <i class="fa-solid fa-star mr-1.5 text-xs"></i> Al-'Asyarah al-Mubasysyarun bil Jannah
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-amber-200 tracking-tight">
+                        Zubair bin Al-Awwam <span class="text-2xl sm:text-3xl font-normal text-gold-400">(رضي الله عنه)</span>
+                    </h2>
+                    <p class="text-amber-100/90 text-base sm:text-lg leading-relaxed font-light">
+                        "Inna likulli nabiyyin hawariyyan, wa hawariyya Az-Zubair." — Sesungguhnya setiap nabi memiliki pengawal/penolong setia (hawari), dan pengawal setiaku adalah Zubair bin Al-Awwam.
+                        <span class="block mt-1 text-sm text-gold-400 italic">— HR. Bukhari & Muslim</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Category Filter -->
+            <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border border-parchment-200 flex flex-col md:flex-row gap-4 items-center justify-between">
+                <!-- Search Input -->
+                <div class="relative w-full md:w-1/2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="biography-search" onkeyup="filterBiography()" placeholder="Cari peristiwa, tempat, atau kata kunci (cth: Shafiyah, Hawari, Badar, Babilonia, Perang Jamal)..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:border-transparent text-sm">
+                </div>
+
+                <!-- Chapter Filter Buttons -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto">
+                    <button onclick="filterChapter('all')" class="chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition">Semua Bab</button>
+                    <button onclick="filterChapter('bab1')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 1</button>
+                    <button onclick="filterChapter('bab2')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 2</button>
+                    <button onclick="filterChapter('bab3')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 3</button>
+                    <button onclick="filterChapter('bab4')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 4</button>
+                    <button onclick="filterChapter('bab5')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 5</button>
+                    <button onclick="filterChapter('bab6')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 6</button>
+                    <button onclick="filterChapter('bab7')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 7</button>
+                </div>
+            </div>
+
+            <!-- Biography Chapters -->
+            <div id="biography-container" class="space-y-6">
+
+                <!-- BAB 1 -->
+                <div class="bio-card bab1 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">1</span>
+                            Nasab, Hubungan Kekerabatan, dan Pernikahan Mulia
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Nasab & Silsilah</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-dna text-gold-600 mr-2"></i>Silsilah Bangsawan Quraisy yang Agung:</h4>
+                            <p class="text-sm sm:text-base">
+                                Beliau adalah <strong>Zubair bin Al-Awwam bin Khuwailid bin Asad bin Abdul Uzza bin Qushay bin Kilab Al-Asadi Al-Qurasyi</strong>. Silsilah garis keturunan beliau bersambung secara langsung dengan Rasulullah SAW pada kakek ke-lima mereka, yaitu Qushay bin Kilab. Ayah beliau, Al-Awwam bin Khuwailid, adalah saudara kandung dari Ummul Mukminin Khadijah binti Khuwailid ra. Ini menjadikan Zubair sebagai keponakan kandung dari Khadijah ra.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-people-roof text-gold-600 mr-2"></i>Hubungan Kekerabatan Dekat dengan Rasulullah SAW:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ibunda Zubair adalah seorang wanita pemberani dan mulia bernama <strong>Shafiyah binti Abdul Muthalib</strong>. Shafiyah adalah bibi (tante) kandung Rasulullah SAW dari pihak ayah, karena ia merupakan saudari kandung dari Abdullah bin Abdul Muthalib (ayahanda Nabi SAW). Dengan demikian, Zubair bin Al-Awwam adalah sepupu kandung Rasulullah SAW dari jalur bibi. Dari pernikahan dengan wanita-wanita mulia—terutama <strong>Asma binti Abu Bakar Ash-Shiddiq</strong> (Dzatur Nithaqain)—Zubair dikaruniai putra-putra terbaik umat seperti Abdullah bin Zubair (khalifah dan pejuang) dan Urwah bin Zubair (salah satu dari 7 ahli fikih Madinah). Pernikahan ini menjadikan Zubair sebagai menantu Abu Bakar Ash-Shiddiq dan ipar dari Ummul Mukminin Aisyah ra.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 2 -->
+                <div class="bio-card bab2 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">2</span>
+                            Didikan Ketat Ibunda Shafiyah dan Ujian Keteguhan Iman
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Masa Kecil & Siksaan</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-child-reaching text-gold-600 mr-2"></i>Tempaan Mental Baja Ibunda Shafiyah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ayah Zubair, Al-Awwam, wafat ketika Zubair masih sangat kecil. Tanggung jawab pengasuhan sepenuhnya dipegang oleh sang ibunda, Shafiyah binti Abdul Muthalib. Shafiyah mendidik Zubair kecil dengan sangat tegas, disiplin tinggi, dan tempaan fisik yang amat keras. Ketika kerabatnya menegur Shafiyah karena mendidik anaknya dengan begitu keras, Shafiyah menjawab dengan bait syair tegas bahwa ia memukul dan menempa Zubair bukan karena benci, melainkan untuk melatih ketahanan mental dan fisiknya agar kelak menjadi ksatria tangguh yang memimpin pasukan, mampu menghancurkan musuh, dan mendatangkan kejayaan bagi umat.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-fire text-gold-600 mr-2"></i>Masuk Islam dan Keteguhan di Tengah Siksaan:</h4>
+                            <p class="text-sm sm:text-base">
+                                Zubair bin Al-Awwam memeluk agama Islam di Makkah pada usia yang sangat belia—sekitar 8 hingga 12 tahun—melalui perantara dakwah Abu Bakar Ash-Shiddiq ra, menjadikannya salah satu pilar <em>As-Sabiqunal Awwalun</em>. Mengetahui keislamannya, paman beliau (Nufail bin Khuwailid) sangat murka. Zubair ditangkap, digulung dalam tikar jerami, lalu digantung di dalam ruangan yang dibakar jerami di bawahnya hingga asap pekat menutupi pernapasan dan membuat dadanya sesak luar biasa.
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Sang paman berteriak memaksa: <em>"Kembalilah kepada menyembah berhala!"</em> Namun dari balik kepulan asap panas yang menyiksa, bocah belia berjiwa ksatria ini berseru dengan mantap: <em>"Demi Allah, aku tidak akan pernah kembali kepada kekafiran selama-lamanya!"</em> Keteguhan hati yang melampaui usianya itu akhirnya membuat paman beliau berputus asa dan melepaskannya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 3 -->
+                <div class="bio-card bab3 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">3</span>
+                            Kisah Bersejarah: Pembawa Pedang Pertama dalam Islam
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Usia 12 Tahun</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-hand-fist text-gold-600 mr-2"></i>Gelar Kehormatan Pembawa Pedang Pertama di Jalan Allah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Saat Zubair baru berusia sekitar 12 tahun di Makkah, beredar kabar burung yang ditiupkan oleh kaum musyrikin bahwa Rasulullah SAW telah ditangkap dan dibunuh. Tanpa sedikit pun ragu, anak belia ini langsung mengambil pedangnya, menghunusnya, dan berlari menyusuri jalanan Makkah dengan tatapan mata membara demi mencari keberadaan Nabi SAW.
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Ketika bertemu dengan Rasulullah SAW yang ternyata dalam keadaan sehat wal afiat di bukit Marwah, Nabi SAW terkejut melihat anak sepupunya memegang pedang terhunus dan bertanya: <em>"Ada apa denganmu wahai Zubair?"</em> Zubair menjawab dengan penuh ketulusan: <em>"Aku mendengar kabar bahwa engkau telah ditangkap dan dibunuh, maka aku keluar membawa pedang ini untuk memenggal kepala orang yang menyakitimu!"</em> 
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Rasulullah SAW tersenyum bahagia, mendoakan kebaikan bagi Zubair serta memohonkan keberkahan untuk pedangnya. Para ulama sepakat mencatat peristiwa heroik ini: <strong>Zubair bin Al-Awwam adalah orang pertama dalam sejarah Islam yang menghunuskan pedang di jalan Allah Ta'ala.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 4 -->
+                <div class="bio-card bab4 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">4</span>
+                            Gelar Kehormatan Agas: "Hawariy Rasulillah" (Pengawal Setia)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Gelar Hawari</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-award text-gold-600 mr-2"></i>Penetapan Sabda Nabi SAW pada Perang Khandaq:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada peristiwa Perang Ahzab (Khandaq) ketika kota Madinah dikepung oleh 10.000 pasukan gabungan musyrikin dan kebohongan pengkhianatan Yahudi Banu Qurayzhah mulai tercium, Rasulullah SAW membutuhkan seorang prajurit yang sangat berani untuk menyusup ke wilayah musuh guna menggali informasi intelijen militer yang amat berbahaya. Rasulullah SAW bertanya di hadapan para sahabat: <em>"Siapakah di antara kalian yang bersedia membawakan berita musuh kepadaku?"</em>
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-user-shield text-gold-600 mr-2"></i>Kesediaan Menjawab Panggilan Nabi Tiga Kali Berturut-Turut:</h4>
+                            <p class="text-sm sm:text-base">
+                                Zubair bin Al-Awwam langsung berdiri dan berseru: <em>"Aku, wahai Rasulullah!"</em> Nabi SAW mengulang pertanyaan tersebut hingga tiga kali, dan pada setiap seruan, Zubair selalu menjadi orang pertama dan satu-satunya yang berdiri dengan penuh keberanian menawarkan jiwanya. Melihat ketulusan dan keberanian tanpa tanding tersebut, Rasulullah SAW bersabda mengabadikan kemuliaannya:
+                            </p>
+                            <blockquote class="italic text-emerald-900 border-l-4 border-gold-600 pl-3 my-2 text-sm sm:text-base font-semibold">
+                                "Inna likulli nabiyyin hawariyyan, wa hawariyya Az-Zubair."<br>
+                                (Sesungguhnya setiap nabi memiliki pengawal/penolong setia [hawari], dan pengawal setiaku adalah Zubair bin Al-Awwam).
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 5 -->
+                <div class="bio-card bab5 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">5</span>
+                            Kepahlawanan Gemilang di Medan Jihad dan Penaklukan Benteng Babilonia
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Keberanian Tempur</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-horse-head text-gold-600 mr-2"></i>Pasukan Berkuda Utama di Perang Badar dan Kepungan Yarmuk:</h4>
+                            <p class="text-sm sm:text-base">
+                                Zubair bin Al-Awwam tidak pernah absen dalam satu pun pertempuran membela Islam. Pada Perang Badar, beliau bersama Miqdad bin Aswad menjadi dua prajurit berkuda utama yang mengawal pertahanan pasukan muslimin. Postur tubuh beliau yang sangat tinggi tegap (*rajulun thowil*) membuat kakinya hampir menyentuh tanah saat menunggang kuda. Pada Perang Yarmuk di Syam, beliau dua kali menembus barisan rapat ribuan tentara Romawi sendirian hingga keluar di belakang barisan musuh dan kembali lagi ke barisan muslimin dengan tubuh penuh sabetan pedang.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-chess-rook text-gold-600 mr-2"></i>Kisah Spektakuler Memanjat Benteng Babilonia di Mesir:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada masa kekhalifahan Umar bin Khattab ra, ketika Amr bin Ash ra mengalami kebuntuan selama berbulan-bulan mengepung Benteng Babilonia di Mesir yang sangat kokoh dan dijaga rapat pasukan Romawi, Amr memohon bantuan pasukan tambahan dari Madinah. Khalifah Umar mengirimkan 4.000 prajurit yang dipimpin oleh empat tokoh utama, di mana Umar menulis surat: <em>"Aku mengirimkan padamu 4.000 pasukan, dan di dalam setiap 1.000 prajurit ada satu orang yang kekuatannya sebanding dengan 1.000 pasukan: yaitu Zubair bin Al-Awwam."</em>
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Tiba di Mesir, Zubair memeriksa kondisi benteng dan berkata: <em>"Aku menyerahkan jiwaku untuk Allah!"</em> Beliau mengambil tangga kayu, memanjat dinding benteng Romawi yang amat tinggi seorang diri di bawah hujan panah, melompati benteng ke dalam markas musuh, bertempur melumpuhkan penjaga, lalu berteriak takbir *Allahu Akbar!* yang menggelegar dari puncak benteng. Gema takbirnya membuat musuh panik mengira seluruh pasukan muslimin telah masuk, sehingga Zubair berhasil membuka gerbang utama benteng dari dalam dan memenangkan pembebasan Mesir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 6 -->
+                <div class="bio-card bab6 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">6</span>
+                            Karakter Mulia, Kezuhudan, dan Dermawan dalam Diam
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Akhlak & Kedermawanan</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-coins text-gold-600 mr-2"></i>Bisnis yang Diberkahi dan Kedermawanan Luar Biasa:</h4>
+                            <p class="text-sm sm:text-base">
+                                Zubair bin Al-Awwam adalah seorang pedagang kaya raya yang sangat sukses. Ketika ditanya apa rahasia keberkahan usahanya, beliau menjawab bahwa beliau tidak pernah menjual barang cacat, tidak pernah menyembunyikan keburukan barang dagangan, dan selalu ridha dengan keuntungan yang sedikit demi keberkahan. Namun, kekayaan melimpah tersebut tidak pernah singgah di hatinya. Beliau menyedekahkan modal dan keuntungan bisnisnya untuk membiayai perlengkapan perang para mujahidin, membayar utang-utang kaum muslimin yang telah meninggal, serta menyokong kehidupan fakir miskin secara diam-diam.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-moon text-gold-600 mr-2"></i>Ibadah Sunnah yang Ditinggalkan dalam Kerahasiaan:</h4>
+                            <p class="text-sm sm:text-base">
+                                Di balik kegarangannya bagaikan singa di medan pertempuran, Zubair adalah hamba Allah yang sangat lembut hatinya dan gemar menangis saat membaca Al-Qur'an. Beliau memiliki kebiasaan menyembunyikan amalan-amalan sunnahnya—seperti shalat malam (*qiyamullail*) dan puasa sunnah—agar terhindar dari sifat riya'. Beliau pernah berwasiat kepada anak-anaknya: <em>"Barang siapa di antara kalian yang mampu memiliki simpanan amal shalih yang tersembunyi (yang tidak diketahui seorang pun kecuali Allah), maka lakukanlah!"</em> Tubuh beliau dipenuhi oleh puluhan bekas luka garitan pedang dan tancapan tombak yang menjadi saksi bisu perjuangan tauhidnya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 7 -->
+                <div class="bio-card bab7 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">7</span>
+                            Peristiwa Perang Jamal, Sikap Ksatria, dan Gugurnya Sang Syahid (36 H)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">36 H / Syahid</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-scale-balanced text-gold-600 mr-2"></i>Ijtihad Politik di Perang Jamal dan Peringatan Ali bin Abi Thalib:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pasca syahidnya Khalifah Utsman bin Affan ra, timbul fitnah besar di tengah umat. Zubair bersama Thalhah bin Ubaidillah dan Ummul Mukminin Aisyah ra berangkat menuju Bashrah dengan niat ijtihad menuntut penegakan hukum terhadap pelaku pembunuhan Utsman. Ketika dua kelompok muslimin berhadapan di Perang Jamal (tahun 36 H), Amirul Mukminin Ali bin Abi Thalib ra maju ke tengah medan perang dan memanggil Zubair. Ali mengingatkan sabda Nabi SAW di masa lalu: <em>"Wahai Zubair, ingatkah engkau ketika Rasulullah SAW bersabda kepadamu: 'Engkau akan memerangi Ali dan engkau berada di pihak yang keliru'?"</em>
+                            </p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-person-walking-arrow-loop-left text-gold-600 mr-2"></i>Penarikan Diri dari Medan Perang dan Pembunuhan Licik:</h4>
+                            <p class="text-sm sm:text-base">
+                                Teringat kembali akan sabda Rasulullah SAW tersebut, Zubair langsung tersadar, menyesali kekhilafannya, dan bersumpah tidak akan memerangi Ali bin Abi Thalib. Dengan jiwa ksatria yang mulia, Zubair memutar arah kudanya dan menarik diri sepenuhnya dari medan pertempuran tanpa ikut bertempur sedikit pun.
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Ketika Zubair sedang dalam perjalanan pulang dan berhenti untuk melaksanakan shalat malam di sebuah lembah bernama <em>Wadi Al-Siba'</em>, seorang penjahat provokator bernama Amr bin Jurmuz membuntutinya. Saat Zubair berada dalam posisi bersujud menghadap Allah, Ibnu Jurmuz menikamnya secara penakut dan licik dari belakang hingga Zubair menghembuskan napas terakhirnya sebagai seorang syahid pada tahun 36 Hijriah (usia sekitar 64 tahun).
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Ketika Ibnu Jurmuz membawa kepala dan pedang Zubair menghadap Ali bin Abi Thalib dengan harapan mendapat imbalan, Ali justru menangis terisak-isak memeluk pedang Zubair dan berseru: <em>"Beritakanlah kabar buruk berupa neraka bagi pembunuh putra Shafiyah! Demi Allah, betapa sering pedang ini menghapus duka dari wajah Rasulullah SAW!"</em> Ali menegaskan bahwa Zubair bin Al-Awwam tetap merupakan sahabat teragung penghuni surga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 2: POSTER DIGITAL -->
+        <section id="tab-poster" class="tab-content hidden space-y-6">
+            <!-- Poster Actions -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-md border border-parchment-200 no-print">
+                <p class="text-sm text-slate-600">Poster visual siap cetak / simpan PDF dari ringkasan biografi.</p>
+                <button onclick="window.print()" class="bg-emerald-800 hover:bg-emerald-900 text-amber-200 px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center">
+                    <i class="fa-solid fa-print mr-2"></i> Cetak / Simpan PDF Poster
+                </button>
+            </div>
+
+            <!-- Poster Canvas Container -->
+            <div class="poster-card pattern-bg text-amber-100 p-6 sm:p-10 rounded-2xl shadow-2xl border-8 double border-gold-600 max-w-4xl mx-auto space-y-8">
+                <!-- Poster Header -->
+                <div class="text-center space-y-2 border-b border-gold-600/40 pb-6">
+                    <div class="inline-block p-3 rounded-full bg-gold-600/20 text-gold-400 mb-2">
+                        <i class="fa-solid fa-shield-halved text-4xl"></i>
+                    </div>
+                    <p class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Infografis Tokoh Teladan Islam</p>
+                    <h2 class="text-3xl sm:text-5xl font-black text-amber-200 tracking-tight">ZUBAIR BIN AL-AWWAM</h2>
+                    <p class="text-2xl font-arabic text-gold-400">الزبير بن العوام — (رضي الله عنه)</p>
+                    <p class="text-sm font-medium text-emerald-200 max-w-xl mx-auto mt-2">
+                        "Hawariy Rasulillah" — Pembawa Pedang Pertama dalam Islam & Pengawal Setia Nabi Muhammad ﷺ.
+                    </p>
+                </div>
+
+                <!-- Poster Grid Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <!-- Column 1 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">1. Profil & Silsilah Mulia</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                <strong>Ibu:</strong> Shafiyah binti Abdul Muthalib (Bibi Kandung Nabi SAW).<br>
+                                <strong>Istri Utama:</strong> Asma binti Abu Bakar Ash-Shiddiq.<br>
+                                <strong>Kedudukan:</strong> Termasuk 10 Sahabat Dijamin Masuk Surga & As-Sabiqunal Awwalun.
+                            </p>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">2. Gelar & Keutamaan Utama</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Pembawa Pedang Pertama:</strong> Menghunuskan pedang membela Nabi di Makkah usia 12 tahun.</li>
+                                <li><strong>Hawariy Rasulillah:</strong> Dijuluki pengawal/penolong setia Nabi pada Perang Khandaq.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">3. Aksi Heroik Militer</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Perang Badar & Yarmuk:</strong> Pasukan berkuda utama pelumpuh barisan musuh.</li>
+                                <li><strong>Benteng Babilonia:</strong> Memanjat tembok benteng Romawi di Mesir sendirian (dikirim Umar sebanding 1.000 pasukan).</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">4. Wafatnya Sang Syahid (36 H)</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                Menarik diri dari Perang Jamal usai teringat sabda Nabi, lalu dibunuh secara licik saat shalat malam di Wadi Al-Siba'. Wafat sebagai syahid ahli surga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster Footer Quote -->
+                <div class="text-center pt-4 border-t border-gold-600/30">
+                    <p class="text-xs font-serif text-amber-300 italic">
+                        "Inna likulli nabiyyin hawariyyan, wa hawariyya Az-Zubair."
+                    </p>
+                    <p class="text-[10px] text-gold-500 uppercase tracking-widest mt-1">— Sabda Rasulullah SAW (HR. Bukhari & Muslim)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: GARIS WAKTU / TIMELINE -->
+        <section id="tab-timeline" class="tab-content hidden space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 mb-6">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-2">Kronologi Garis Waktu Sejarah</h3>
+                <p class="text-slate-600 text-sm">Jejak langkah perjuangan Zubair bin Al-Awwam (ra) dari awal dakwah Makkah hingga gugur syahid.</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-4 border-gold-600 ml-4 sm:ml-32 space-y-8">
+
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Awal Islam
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Awal Islam</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Masuk Islam & Siksaan Paman</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Memeluk Islam di usia belia (8-12 tahun) lewat Abu Bakar ra. Teguh bertahan di tengah siksaan asap jerami panas pamannya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Usia 12 Tahun
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Usia 12 Tahun</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Pedang Pertama dalam Islam</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Menghunuskan pedang di jalanan Makkah membela Nabi SAW saat mendengar kabar burung penangkapan Nabi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        2 H & 5 H
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">2 H & 5 H</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Perang Badar & Gelar Hawari Nabi</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Menjadi pasukan berkuda Badar. Mendapatkan gelar resmi "Hawariy Rasulillah" saat misi berbahaya di Perang Khandaq.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        15 H / 636 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">15 H / 636 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Pertempuran Yarmuk di Syam</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Menembus barisan rapat ribuan tentara Romawi sendirian dua kali berturut-turut untuk membakar semangat pasukan muslim.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        20 H / 641 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">20 H / 641 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Penaklukan Benteng Babilonia Mesir</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Memanjat tembok benteng Romawi yang amat tinggi sendirian dan bertakbir di puncaknya hingga gerbang benteng berhasil dibuka.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        36 H / 656 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">36 H / 656 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Mundur dari Perang Jamal & Gugur Syahid</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Mundur dari pertempuran setelah diingatkan Ali ra, lalu dibunuh secara licik oleh Ibnu Jurmuz saat shalat di Wadi Al-Siba'.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 4: CATATAN SAYA -->
+        <section id="tab-catatan" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1"><i class="fa-solid fa-pen-to-square text-gold-600 mr-2"></i>Catatan Pribadi Anda</h3>
+                <p class="text-slate-600 text-sm">Tulis poin-poin penting, faedah, atau kesimpulan dari materi Zubair bin Al-Awwam (ra). Catatan ini akan tersimpan otomatis di perangkat Anda.</p>
+            </div>
+
+            <!-- Note Input Card -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <div>
+                    <label for="note-title" class="block text-xs font-bold text-slate-600 uppercase mb-1">Judul Catatan</label>
+                    <input type="text" id="note-title" placeholder="Contoh: Teladan Keberanian & Keikhlasan Zubair" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
+                </div>
+                <div>
+                    <label for="note-content" class="block text-xs font-bold text-slate-600 uppercase mb-1">Isi Catatan</label>
+                    <textarea id="note-content" rows="4" placeholder="Tulis rangkuman atau faedah hikmah Anda di sini..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm"></textarea>
+                </div>
+                <div class="flex justify-end space-x-2">
+                    <button onclick="clearNoteForm()" class="px-4 py-2 bg-slate-200 text-slate-700 hover:bg-slate-300 rounded-lg text-sm font-semibold transition">
+                        Reset
+                    </button>
+                    <button onclick="saveNote()" class="px-5 py-2 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg text-sm font-semibold transition flex items-center">
+                        <i class="fa-solid fa-floppy-disk mr-2"></i> Simpan Catatan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Saved Notes List -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <h4 class="text-lg font-bold text-emerald-950 border-b border-slate-100 pb-2 flex items-center justify-between">
+                    <span>Daftar Catatan Tersimpan</span>
+                    <span id="note-count" class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">0 Catatan</span>
+                </h4>
+                <div id="notes-container" class="space-y-3">
+                    <!-- Loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: KUIS INTERAKTIF -->
+        <section id="tab-kuis" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 text-center">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1">Kuis Pengetahuan Sahabat</h3>
+                <p class="text-slate-600 text-sm">Uji pemahaman Anda mengenai sejarah dan keutamaan Zubair bin Al-Awwam (ra).</p>
+            </div>
+
+            <!-- Quiz Card -->
+            <div id="quiz-container" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-parchment-200 space-y-6">
+                <!-- Progress & Score Header -->
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                    <span id="quiz-progress" class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Pertanyaan 1 dari 5</span>
+                    <span id="quiz-score" class="text-xs font-bold text-gold-700 bg-amber-100 px-3 py-1 rounded-full">Skor: 0</span>
+                </div>
+
+                <!-- Question Text -->
+                <h4 id="quiz-question" class="text-lg sm:text-xl font-bold text-slate-800">
+                    <!-- Loaded via JS -->
+                </h4>
+
+                <!-- Options -->
+                <div id="quiz-options" class="space-y-3">
+                    <!-- Loaded via JS -->
+                </div>
+
+                <!-- Explanation Box -->
+                <div id="quiz-explanation" class="hidden p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm space-y-1">
+                    <span id="explanation-status" class="font-bold block"></span>
+                    <p id="explanation-text" class="text-slate-700"></p>
+                </div>
+
+                <!-- Next Button -->
+                <button id="quiz-next-btn" onclick="nextQuestion()" class="hidden w-full py-3 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg font-bold text-center transition">
+                    Lanjut ke Pertanyaan Berikutnya <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Quiz Result Card -->
+            <div id="quiz-result" class="hidden bg-white p-8 rounded-xl shadow-xl border border-parchment-200 text-center space-y-6">
+                <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto text-gold-600 text-4xl shadow-inner">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-emerald-950">Kuis Selesai!</h3>
+                    <p class="text-slate-600 text-sm mt-1">Terima kasih telah mempelajari biografi Zubair bin Al-Awwam (ra).</p>
+                </div>
+                <div class="bg-parchment-100 p-4 rounded-lg inline-block">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Skor Akhir Anda</p>
+                    <p id="final-score" class="text-4xl font-black text-emerald-900 mt-1">0 / 100</p>
+                </div>
+                <div>
+                    <button onclick="resetQuiz()" class="px-6 py-2.5 bg-emerald-900 text-amber-200 rounded-lg font-bold hover:bg-emerald-800 transition">
+                        <i class="fa-solid fa-rotate-right mr-2"></i> Coba Kuis Lagi
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-amber-200/80 text-xs text-center py-6 border-t border-gold-600/30 no-print">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p class="font-medium">Aplikasi Biografi Lengkap & Interaktif Zubair bin Al-Awwam (ra)</p>
+            <p class="text-amber-100/50">Dirancang dengan tema Islamic Gold & Parchment untuk kemudahan pembacaan dan pembelajaran.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Tab Navigation System
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+                tab.classList.remove('block');
+            });
+
+            const activeTab = document.getElementById('tab-' + tabId);
+            if (activeTab) {
+                activeTab.classList.remove('hidden');
+                activeTab.classList.add('block');
+            }
+
+            const navIds = ['biografi', 'poster', 'timeline', 'catatan', 'kuis'];
+            navIds.forEach(id => {
+                const btn = document.getElementById('nav-' + id);
+                if (btn) {
+                    if (id === tabId) {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40 font-semibold";
+                    } else {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 font-normal";
+                    }
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Biography Search Filter
+        function filterBiography() {
+            const input = document.getElementById('biography-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.bio-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Chapter Category Filter
+        function filterChapter(babClass) {
+            const cards = document.querySelectorAll('.bio-card');
+            const btns = document.querySelectorAll('.chapter-btn');
+
+            btns.forEach(btn => {
+                btn.className = "chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+            });
+
+            event.target.className = "chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition";
+
+            cards.forEach(card => {
+                if (babClass === 'all') {
+                    card.style.display = "block";
+                } else {
+                    if (card.classList.contains(babClass)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                }
+            });
+        }
+
+        // --- FITUR CATATAN (LOCALSTORAGE) ---
+        function getSavedNotes() {
+            let notes = localStorage.getItem('zubair_notes');
+            return notes ? JSON.parse(notes) : [];
+        }
+
+        function saveNote() {
+            const titleInput = document.getElementById('note-title');
+            const contentInput = document.getElementById('note-content');
+            
+            const title = titleInput.value.trim();
+            const content = contentInput.value.trim();
+
+            if (!title || !content) {
+                alert('Judul dan isi catatan tidak boleh kosong!');
+                return;
+            }
+
+            const newNote = {
+                id: Date.now(),
+                title: title,
+                content: content,
+                date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+            };
+
+            let notes = getSavedNotes();
+            notes.unshift(newNote);
+            localStorage.setItem('zubair_notes', JSON.stringify(notes));
+
+            titleInput.value = '';
+            contentInput.value = '';
+            loadNotes();
+            alert('Catatan berhasil disimpan!');
+        }
+
+        function deleteNote(id) {
+            if (confirm('Apakah Anda yakin ingin menghapus catatan ini?')) {
+                let notes = getSavedNotes();
+                notes = notes.filter(note => note.id !== id);
+                localStorage.setItem('zubair_notes', JSON.stringify(notes));
+                loadNotes();
+            }
+        }
+
+        function clearNoteForm() {
+            document.getElementById('note-title').value = '';
+            document.getElementById('note-content').value = '';
+        }
+
+        function loadNotes() {
+            const notes = getSavedNotes();
+            const container = document.getElementById('notes-container');
+            const countBadge = document.getElementById('note-count');
+
+            countBadge.innerText = `${notes.length} Catatan`;
+            container.innerHTML = '';
+
+            if (notes.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">Belum ada catatan yang tersimpan.</p>`;
+                return;
+            }
+
+            notes.forEach(note => {
+                const noteCard = document.createElement('div');
+                noteCard.className = "p-4 rounded-lg bg-parchment-50 border border-parchment-200 space-y-2 relative group";
+                noteCard.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <h5 class="font-bold text-emerald-950 text-base">${escapeHtml(note.title)}</h5>
+                        <button onclick="deleteNote(${note.id})" class="text-red-500 hover:text-red-700 text-xs px-2 py-1 rounded transition" title="Hapus Catatan">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-500 font-mono">${note.date}</p>
+                    <p class="text-sm text-slate-700 whitespace-pre-line leading-relaxed">${escapeHtml(note.content)}</p>
+                `;
+                container.appendChild(noteCard);
+            });
+        }
+
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+        // --- KUIS INTERAKTIF ---
+        const quizQuestions = [
+            {
+                question: "Siapakah nama ibunda dari Zubair bin Al-Awwam yang merupakan bibi kandung Rasulullah SAW?",
+                options: [
+                    "Khadijah binti Khuwailid",
+                    "Shafiyah binti Abdul Muthalib",
+                    "Asma binti Abu Bakar",
+                    "Fatimah binti Asad"
+                ],
+                correct: 1,
+                explanation: "Ibunda Zubair adalah Shafiyah binti Abdul Muthalib, saudari kandung dari ayah Nabi SAW (Abdullah bin Abdul Muthalib)."
+            },
+            {
+                question: "Gelar kehormatan apakah yang disematkan langsung oleh Rasulullah SAW kepada Zubair bin Al-Awwam saat Perang Khandaq?",
+                options: [
+                    "Saifullah al-Maslul (Pedang Allah)",
+                    "Amin al-Ummah (Kepercayaan Umat Ini)",
+                    "Hawariy Rasulillah (Pengawal/Penolong Setia Nabi)",
+                    "Asadullah (Singa Allah)"
+                ],
+                correct: 2,
+                explanation: "Rasulullah SAW bersabda: 'Sesungguhnya setiap nabi memiliki hawari (pengawal setia), dan hawariku adalah Zubair bin Al-Awwam' (HR. Bukhari & Muslim)."
+            },
+            {
+                question: "Pada usia berapakah Zubair bin Al-Awwam tercatat sebagai orang pertama yang menghunuskan pedang membela Islam di jalanan Makkah?",
+                options: [
+                    "8 Tahun",
+                    "12 Tahun",
+                    "18 Tahun",
+                    "25 Tahun"
+                ],
+                correct: 1,
+                explanation: "Pada usia 12 tahun, Zubair menghunuskan pedang di Makkah membela Nabi SAW saat mendengar kabar burung penangkapan Nabi."
+            },
+            {
+                question: "Berapakah jumlah pasukan yang diwakili oleh keberanian Zubair bin Al-Awwam menurut surat Khalifah Umar kepada Amr bin Ash di Mesir?",
+                options: [
+                    "100 Pasukan",
+                    "500 Pasukan",
+                    "1.000 Pasukan",
+                    "10.000 Pasukan"
+                ],
+                correct: 2,
+                explanation: "Khalifah Umar menulis bahwa beliau mengirim 4 orang panglima yang masing-masingnya sebanding dengan 1.000 pasukan, salah satunya Zubair bin Al-Awwam."
+            },
+            {
+                question: "Mengapa Zubair bin Al-Awwam memutuskan menarik diri dari kancah Perang Jamal?",
+                options: [
+                    "Karena beliau menderita sakit parah",
+                    "Karena teringat peringatan sabda Nabi SAW yang disampaikan oleh Ali bin Abi Thalib",
+                    "Karena dikalahkan oleh pasukan musuh",
+                    "Karena diperintahkan oleh Khalifah Umar"
+                ],
+                correct: 1,
+                explanation: "Ali bin Abi Thalib mengingatkan Zubair akan sabda Nabi SAW di masa lalu bahwa Zubair akan memusuhi Ali di pihak yang keliru, sehingga Zubair langsung mundur."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizQuestions[currentQuestion];
+            document.getElementById('quiz-progress').innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizQuestions.length}`;
+            document.getElementById('quiz-question').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+
+            document.getElementById('quiz-explanation').classList.add('hidden');
+            document.getElementById('quiz-next-btn').classList.add('hidden');
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 font-medium text-sm transition flex items-center justify-between";
+                btn.innerHTML = `<span>${String.fromCharCode(65 + idx)}. ${opt}</span> <i class="fa-regular fa-circle text-slate-300"></i>`;
+                btn.onclick = () => checkAnswer(idx, btn);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIdx, btnElement) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizQuestions[currentQuestion];
+            const optionsBtns = document.getElementById('quiz-options').children;
+
+            if (selectedIdx === q.correct) {
+                score += 20;
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-100 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-check text-emerald-700 text-lg";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Benar!";
+                document.getElementById('explanation-status').className = "font-bold text-emerald-800 block";
+            } else {
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-red-400 bg-red-50 text-red-900 font-medium text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-xmark text-red-600 text-lg";
+
+                optionsBtns[q.correct].className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Kurang Tepat";
+                document.getElementById('explanation-status').className = "font-bold text-red-700 block";
+            }
+
+            document.getElementById('quiz-score').innerText = `Skor: ${score}`;
+            document.getElementById('explanation-text').innerText = q.explanation;
+            document.getElementById('quiz-explanation').classList.remove('hidden');
+            document.getElementById('quiz-next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('final-score').innerText = `${score} / 100`;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-score').innerText = `Skor: 0`;
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        window.onload = function() {
+            loadQuestion();
+            loadNotes();
+        };
+    </script>
+</body>
+</html>

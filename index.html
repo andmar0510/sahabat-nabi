@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Sahabat Nabi ﷺ — Ensiklopedia Interaktif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 850: '#064e3b', 950: '#022c22' },
+                        gold: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706', 700: '#b45309' },
+                        parchment: { 50: '#fdfbf7', 100: '#f7f3e9', 200: '#ebe3d1', 800: '#3e382d' }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .pattern-bg {
+            background-color: #022c22;
+            background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #022c22 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        iframe { border: none; }
+    </style>
+</head>
+<body class="bg-parchment-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar Utama (HUB) -->
+    <header class="sticky top-0 z-50 bg-emerald-950/95 backdrop-blur-md text-amber-100 border-b border-gold-600/30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-20 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-600 to-amber-300 flex items-center justify-center text-emerald-950 text-xl font-bold shadow-md">
+                        <i class="fa-solid fa-book-quran"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold tracking-wide text-amber-200 leading-tight">Biografi Sahabat Nabi ﷺ</h1>
+                        <p class="text-xs text-emerald-300 font-arabic tracking-widest">الصحابة الكرام — Ensiklopedia Interaktif</p>
+                    </div>
+                </div>
+                <div class="hidden sm:block text-right">
+                    <p class="text-xs text-gold-400 font-semibold">5 Tokoh Pilihan</p>
+                    <p class="text-[10px] text-emerald-300">Al-'Asyarah al-Mubasysyarun bil Jannah</p>
+                </div>
+            </div>
+
+            <!-- Tab Navigasi Tokoh (Horizontal Scroll untuk Mobile) -->
+            <nav class="flex overflow-x-auto pb-2 gap-2 -mx-1 px-1" style="scrollbar-width: none;">
+                <button onclick="loadSahabat('zubair', this)" 
+                    class="sahabat-tab active flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-semibold transition-all bg-emerald-900/80 text-amber-200 border border-gold-500/40 border-b-0">
+                    <i class="fa-solid fa-shield-halved mr-1.5"></i> Zubair bin Al-Awwam
+                </button>
+                <button onclick="loadSahabat('abuubaidah', this)" 
+                    class="sahabat-tab flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-medium transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 border border-transparent">
+                    <i class="fa-solid fa-shield-halved mr-1.5"></i> Abu Ubaidah
+                </button>
+                <button onclick="loadSahabat('abdurrahman', this)" 
+                    class="sahabat-tab flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-medium transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 border border-transparent">
+                    <i class="fa-solid fa-scale-balanced mr-1.5"></i> Abdurrahman bin Auf
+                </button>
+                <button onclick="loadSahabat('saad', this)" 
+                    class="sahabat-tab flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-medium transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 border border-transparent">
+                    <i class="fa-solid fa-feather-pointed mr-1.5"></i> Sa'ad bin Abi Waqqash
+                </button>
+                <button onclick="loadSahabat('said', this)" 
+                    class="sahabat-tab flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-medium transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 border border-transparent">
+                    <i class="fa-solid fa-star-and-crescent mr-1.5"></i> Sa'id bin Zaid
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Area Konten (Iframe) -->
+    <main class="flex-grow w-full">
+        <iframe id="content-frame" 
+                src="Zubair.html" 
+                title="Konten Biografi Sahabat"
+                class="w-full"
+                style="height: calc(100vh - 168px); min-height: 600px;">
+        </iframe>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-amber-200/80 text-xs text-center py-3 border-t border-gold-600/30">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>Ensiklopedia Interaktif Biografi Sahabat Nabi ﷺ — Tema Islamic Gold & Parchment</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mapping nama file untuk setiap tokoh
+        const sahabatFiles = {
+            'zubair': 'Zubair.html',
+            'abuubaidah': 'AbuUbaidah.html',
+            'abdurrahman': 'AbdurrahmanbinAuf.html',
+            'saad': 'Saad.html',
+            'said': 'SaidbinZaid.html'
+        };
+
+        // Fungsi memuat konten ke iframe & mengubah status tab aktif
+        function loadSahabat(key, btnElement) {
+            const frame = document.getElementById('content-frame');
+            frame.src = sahabatFiles[key] || 'Zubair.html';
+
+            // Reset semua tab ke gaya tidak aktif
+            document.querySelectorAll('.sahabat-tab').forEach(tab => {
+                tab.className = "sahabat-tab flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-medium transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 border border-transparent";
+            });
+
+            // Set tab yang diklik menjadi aktif
+            btnElement.className = "sahabat-tab active flex-shrink-0 px-4 py-2.5 rounded-t-lg text-sm font-semibold transition-all bg-emerald-900/80 text-amber-200 border border-gold-500/40 border-b-0";
+
+            // Simpan pilihan terakhir di localStorage (opsional)
+            localStorage.setItem('sahabat_terakhir', key);
+        }
+
+        // Saat halaman dimuat, buka tab terakhir yang dipilih (jika ada)
+        window.addEventListener('DOMContentLoaded', () => {
+            const last = localStorage.getItem('sahabat_terakhir');
+            if (last && sahabatFiles[last]) {
+                const btn = [...document.querySelectorAll('.sahabat-tab')]
+                    .find(b => b.getAttribute('onclick').includes(`'${last}'`));
+                if (btn) loadSahabat(last, btn);
+            }
+        });
+    </script>
+</body>
+</html>

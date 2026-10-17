@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi & Kisah Lengkap Abu Ubaidah bin al-Jarrah (ra) - Amin al-Ummah</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        parchment: {
+                            50: '#fdfbf7',
+                            100: '#f7f3e9',
+                            200: '#ebe3d1',
+                            800: '#3e382d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arabic-text {
+            font-family: 'Amiri', serif;
+        }
+        .pattern-bg {
+            background-color: #022c22;
+            background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #022c22 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.95;
+        }
+        .poster-border {
+            border: 12px double #d97706;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .poster-card {
+                box-shadow: none !important;
+                border: 2px solid #000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-parchment-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar Sticky -->
+    <header class="sticky top-0 z-50 bg-emerald-950/95 backdrop-blur-md text-amber-100 border-b border-gold-600/30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-600 to-amber-300 flex items-center justify-center text-emerald-950 text-xl font-bold shadow-md">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-wide text-amber-200 leading-tight">Abu Ubaidah bin al-Jarrah <span class="text-xs text-gold-400 font-normal">(ra)</span></h1>
+                    <p class="text-xs text-emerald-300 font-arabic tracking-widest">أمين هذه الأمة — Kepercayaan Umat Ini</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                <button onclick="switchTab('biografi')" id="nav-biografi" class="px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> Biografi Lengkap
+                </button>
+                <button onclick="switchTab('poster')" id="nav-poster" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-scroll mr-1.5"></i> Poster Digital
+                </button>
+                <button onclick="switchTab('timeline')" id="nav-timeline" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-timeline mr-1.5"></i> Garis Waktu
+                </button>
+                <button onclick="switchTab('catatan')" id="nav-catatan" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-pen-to-square mr-1.5"></i> Catatan Saya
+                </button>
+                <button onclick="switchTab('kuis')" id="nav-kuis" class="px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> Kuis Interaktif
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-amber-300 hover:text-white text-2xl focus:outline-none p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-950 border-b border-gold-600/30 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="switchTab('biografi'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-amber-300 bg-emerald-900/60 font-medium">
+                <i class="fa-solid fa-book-open mr-2"></i> Biografi Lengkap
+            </button>
+            <button onclick="switchTab('poster'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-scroll mr-2"></i> Poster Digital
+            </button>
+            <button onclick="switchTab('timeline'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-timeline mr-2"></i> Garis Waktu
+            </button>
+            <button onclick="switchTab('catatan'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-pen-to-square mr-2"></i> Catatan Saya
+            </button>
+            <button onclick="switchTab('kuis'); toggleMobileMenu()" class="w-full text-left px-4 py-2.5 rounded-md text-emerald-200 hover:text-amber-300 font-medium">
+                <i class="fa-solid fa-graduation-cap mr-2"></i> Kuis Interaktif
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- TAB 1: BIOGRAFI LENGKAP -->
+        <section id="tab-biografi" class="tab-content block space-y-8">
+            <!-- Hero Banner -->
+            <div class="pattern-bg rounded-2xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden border border-gold-500/30">
+                <div class="max-w-3xl relative z-10 space-y-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/20 text-gold-400 border border-gold-500/40">
+                        <i class="fa-solid fa-star mr-1.5 text-xs"></i> Al-'Asyarah al-Mubasysyarun bil Jannah
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-amber-200 tracking-tight">
+                        Abu Ubaidah bin al-Jarrah <span class="text-2xl sm:text-3xl font-normal text-gold-400">(رضي الله عنه)</span>
+                    </h2>
+                    <p class="text-amber-100/90 text-base sm:text-lg leading-relaxed font-light">
+                        "Sesungguhnya setiap umat memiliki sosok penjaga amanah (kepercayaan), dan sosok kepercayaan umat ini adalah Abu Ubaidah bin al-Jarrah."
+                        <span class="block mt-1 text-sm text-gold-400 italic">— HR. Bukhari & Muslim</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Category Filter -->
+            <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border border-parchment-200 flex flex-col md:flex-row gap-4 items-center justify-between">
+                <!-- Search Input -->
+                <div class="relative w-full md:w-1/2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="biography-search" onkeyup="filterBiography()" placeholder="Cari peristiwa, tempat, atau kata kunci (cth: Badar, Uhud, Syam, Wabah Amwas)..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:border-transparent text-sm">
+                </div>
+
+                <!-- Chapter Filter Buttons -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto">
+                    <button onclick="filterChapter('all')" class="chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition">Semua Bab</button>
+                    <button onclick="filterChapter('bab1')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 1</button>
+                    <button onclick="filterChapter('bab2')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 2</button>
+                    <button onclick="filterChapter('bab3')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 3</button>
+                    <button onclick="filterChapter('bab4')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 4</button>
+                    <button onclick="filterChapter('bab5')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 5</button>
+                    <button onclick="filterChapter('bab6')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 6</button>
+                    <button onclick="filterChapter('bab7')" class="chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Bab 7</button>
+                </div>
+            </div>
+
+            <!-- Biography Chapters -->
+            <div id="biography-container" class="space-y-6">
+
+                <!-- BAB 1 -->
+                <div class="bio-card bab1 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">1</span>
+                            Silsilah, Nasab, dan Sifat Fisik serta Kepribadian
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Nasab & Profil</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-dna text-gold-600 mr-2"></i>Garis Keturunan dan Silsilah:</h4>
+                            <p class="text-sm sm:text-base">
+                                nama lengkap beliau adalah <strong>Aamir bin Abdullah bin al-Jarrah bin Hilal bin Uhaib bin Dhabbah bin al-Harits bin Fihr al-Qurasyi al-Fihri</strong>. Nama kunyah beliau yang terpatri kuat dalam panggung sejarah Islam adalah <strong>Abu Ubaidah</strong>. Nasab beliau bertemu dengan Rasulullah SAW pada kakek ke-delapan, yaitu Fihr bin Malik (yang dikenal pula sebagai julukan Quraisy). Beliau dilahirkan di Makkah dari keluarga bangsawan Quraisy yang dihormati atas keberanian, kebijaksanaan, dan integritas tinggi.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-user-check text-gold-600 mr-2"></i>Karakter dan Penampilan Fisik:</h4>
+                            <p class="text-sm sm:text-base">
+                                Secara perawakan, Abu Ubaidah radhiyallahu 'anhu dideskripsikan berbadan tinggi tegap, berpostur ramping, berwajah cerah, serta memiliki janggut yang tipis. Beliau senantiasa memancarkan rasa tenang, penuh kerendahan hati (<em>tawadhu'</em>), namun menyimpan kewibawaan militer dan ketegasan moral yang amat luar biasa. Tutur katanya senantiasa santun, perilakunya pemalu, tetapi ketika berada dalam medan pertempuran mempertahankan nilai tauhid, beliau berubah menjadi sosok yang berani bagaikan singa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 2 -->
+                <div class="bio-card bab2 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">2</span>
+                            Awal Keislaman dan Ujian Berat Keimanan
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">As-Sabiqunal Awwalun</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-star text-gold-600 mr-2"></i>Pionir Dakwah Awal Makkah:</h4>
+                            <p class="text-sm sm:text-base">
+                                Abu Ubaidah bin al-Jarrah termasuk golongan manusia paling mulia yang memeluk Islam pada fase paling awal (<em>As-Sabiqunal Awwalun</em>). Beliau mengikrarkan syahadat hanya berselang satu hari setelah keislaman Abu Bakar ash-Shiddiq radhiyallahu 'anhu. Beliau masuk Islam bersama rombongan sahabat pemuda lainnya seperti Utsman bin Mazh'un, Abdurrahman bin Auf, dan Ar-Raqam bin Abil Arqam. Sejak detik pertama keislamannya, beliau mendedikasikan seluruh potensi hidupnya untuk mendampingi Nabi SAW di tengah intimidasi hebat suku Quraisy. Beliau juga ikut serta dalam peristiwa hijrah ke Habasyah (Etiopia) demi menyelamatkan akidah.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-gavel text-gold-600 mr-2"></i>Ujian Iman Terberat di Medan Badar (Tahun 2 H):</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada Pertempuran Badar, Abu Ubaidah dihadapkan pada skenario ujian keimanan paling dahsyat yang pernah tercatat dalam sejarah manusia. Ayah kandungnya sendiri, Abdullah bin al-Jarrah, bertempur di barisan musyrikin Quraisy. Sepanjang kecamuk perang, sang ayah terus-menerus memburu dan mengincar posisi Abu Ubaidah di medan laga. Abu Ubaidah berulang kali berusaha menghindar dan memalingkan arah kudanya demi menghormati ikatan darah.
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Namun, ketika sang ayah terus merangsek maju dan menghadang barisan pertahanan umat Islam hingga membahayakan dakwah Tauhid, Abu Ubaidah harus memilih antara pertalian darah kesyirikan atau kelurusan iman kepada Allah. Dengan ketetapan hati demi membela Islam, Abu Ubaidah meladeni duel tersebut hingga sang ayah tewas di tangannya. Atas keteguhan tauhid yang melampaui batas ikatan kekeluargaan musyrik inilah, Allah SWT menurunkan wahyu penegasan dalam Surah Al-Mujadilah ayat 22:
+                            </p>
+                            <blockquote class="italic text-emerald-900 border-l-4 border-gold-600 pl-3 my-2 text-sm">
+                                "Engkau tidak akan mendapati suatu kaum yang beriman kepada Allah dan hari akhirat, saling berkasih-sayang dengan orang-orang yang menentang Allah dan Rasul-Nya, sekalipun orang-orang itu bapak-bapak, anak-anak, saudara-saudara ataupun kerabat mereka..."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 3 -->
+                <div class="bio-card bab3 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">3</span>
+                            Keberanian di Perang Uhud dan Pengorbanan untuk Rasulullah SAW
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Perang Uhud</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-shield-cat text-gold-600 mr-2"></i>Perisai Manusia Bagi Nabi SAW:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada Perang Uhud (tahun 3 H), ketika barisan kaum muslimin sempat terdesak dan terpecah akibat serangan balik pasukan berkuda musuh, Abu Ubaidah merupakan salah satu dari sangat sedikit sahabat yang tetap berdiri kokoh membentengi Rasulullah SAW dari hujan panah dan tebasan pedang lawan. Beliau tidak bergeming sedikit pun meski nyawanya terancam.
+                            </p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-tooth text-gold-600 mr-2"></i>Kisah Dua Lingkaran Baju Besi di Pipi Nabi:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika sebuah lemparan senjata musuh menghantam pelindung kepala Rasulullah SAW hingga dua lingkaran rantai besi (<em>halqataini min halaqil maghfar</em>) menancap sangat dalam ke dalam tulang pipi Nabi yang mulia, Abu Bakar ash-Shiddiq berlari hendak mencabutnya. Namun, Abu Ubaidah memohon dengan sangat: <em>"Aku memohon demi Allah kepadamu wahai Abu Bakar, biarkan aku yang mencabutnya!"</em>
+                            </p>
+                            <p class="text-sm sm:text-base mt-2">
+                                Abu Ubaidah khawatir jika mencabutnya dengan tangan, pergerakannya akan melukai pipi Rasulullah SAW. Maka, beliau menggigit lingkaran besi pertama dengan gigi gerahamnya secara hati-hati lalu menariknya perlahan hingga besi itu terlepas, walau akibatnya satu gigi depan Abu Ubaidah harus tanggal. Beliau kemudian menggigit lingkaran besi kedua yang menancap di pipi sebelah lainnya dan menariknya hingga terlepas, yang menyebabkan gigi depannya yang lain turut patah. Meskipun dua gigi depannya patah (<em>al-hatsam</em>), para sahabat memuji bahwa ketanggalan gigi tersebut justru makin memperindah ketampanan dan kewibawaan senyum Abu Ubaidah di kemudian hari.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 4 -->
+                <div class="bio-card bab4 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">4</span>
+                            Gelar Sanjungan "Amin al-Ummah" (Penjaga Amanah Umat)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Gelar Murni</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-award text-gold-600 mr-2"></i>Penetapan Sabda Rasulullah SAW:</h4>
+                            <p class="text-sm sm:text-base">
+                                Keutamaan paling legendaris dari Abu Ubaidah adalah penetapan langsung dari Lisan An-Nubuwwah mengenai sifat amanahnya. Dalam hadis yang diriwayatkan oleh Imam Bukhari dan Muslim, Rasulullah SAW bersabda: <em>"Sesungguhnya setiap umat mempunyai orang kepercayaan (penjaga amanah), dan kepercayaan umat ini adalah Abu Ubaidah bin al-Jarrah."</em>
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-handshake text-gold-600 mr-2"></i>Utusan untuk Kaum Najran:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika utusan Nasrani dari Najran (Yaman) mendatangi Madinah dan meminta Rasulullah SAW untuk mengutus seorang hamba yang sangat jujur, adil, serta terpercaya untuk menyelesaikan sengketa harta dan mengajarkan syariat Islam di wilayah mereka, Rasulullah SAW bersabda: <em>"Sungguh aku akan mengutus bersama kalian seorang laki-laki yang benar-benar terpercaya, sangat terpercaya, dan jujur!"</em> Para sahabat ra—termasuk Umar bin al-Khattab—mengakui bahwa mereka tidak pernah mendambakan suatu kepemimpinan melebihi hari itu, bukan karena haus jabatan, melainkan karena merindukan persaksian sabda Nabi tersebut. Rasulullah SAW lalu memegang tangan Abu Ubaidah bin al-Jarrah dan menunjuknya untuk pergi ke Najran.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 5 -->
+                <div class="bio-card bab5 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">5</span>
+                            Panglima Tertinggi Pembuka Negeri Syam dan Kepemimpinan Mulia
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Panglima Syam</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-chess-knight text-gold-600 mr-2"></i>Kepemimpinan Pasukan di Syam:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada masa kekhalifahan Umar bin al-Khattab radhiyallahu 'anhu, Abu Ubaidah diamanahkan jabatan Panglima Tertinggi gabungan seluruh legiun tentara muslimin di kawasan Levant (Syam: Suriah, Yordania, Palestina, Lebanon). Di bawah komando dan strategi beliau—bekerja sama erat dengan Khalid bin al-Walid—pasukan Islam berhasil memenangkan penaklukan monumental seperti Pertempuran Yarmuk, pembebasan kota Damaskus, Homs, hingga penyerahan kunci kota suci Baitul Maqdis (Yerusalem) langsung oleh Patriark Sophronius kepada Khalifah Umar.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-heart-circle-check text-gold-600 mr-2"></i>Keteladanan Sikap Saling Menghormati dengan Khalid bin Walid:</h4>
+                            <p class="text-sm sm:text-base">
+                                Ketika instruksi surat pergantian panglima dari Khalifah Umar tiba di tengah penyerangan Yarmuk—di mana kepemimpinan dialihkan dari Khalid bin al-Walid kepada Abu Ubaidah—Abu Ubaidah merahasiakan surat tersebut sementara waktu agar tidak memecah konsentrasi tempur pasukan. Setelah pertempuran selesai, beliau menyerahkan komando dengan kelembutan dan tawadhu yang luar biasa. Khalid berkata: <em>"Semoga Allah merahmatimu wahai Abu Ubaidah, mengapa engkau tidak memberitahuku sejak awal?"</em> Abu Ubaidah menjawab: <em>"Aku tidak ingin merusak konsentrasi dan niat pertempuranmu. Kita tidak bertempur demi mencari kekuasaan duniawi, melainkan sama-sama bersaudara yang berjuang karena Allah."</em> Khalid pun senantiasa menaruh rasa hormat mendalam dan menjadi penasihat militer utama bagi Abu Ubaidah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 6 -->
+                <div class="bio-card bab6 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">6</span>
+                            Kesederhanaan yang Menangiskan Khalifah Umar bin al-Khattab
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">Kezuhudan Hakiki</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-house-chimney-crack text-gold-600 mr-2"></i>Kunjungan Umar ke Kediaman Gubernur Syam:</h4>
+                            <p class="text-sm sm:text-base">
+                                Meskipun menjabat sebagai Penguasa Tertinggi (Gubernur General) untuk wilayah Syam yang amat kaya dan menguasai perbendaharaan ghanimah yang melimpah, Abu Ubaidah memilih gaya hidup yang sangat zuhud, menyerupai pola hidup Rasulullah SAW. Peristiwa menyentuh terjadi ketika Khalifah Umar bin al-Khattab melakukan kunjungan kerja ke Syam dan menyempatkan mampir ke kediaman pribadi Abu Ubaidah.
+                            </p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-box-open text-gold-600 mr-2"></i>Isi Tempat Tinggal Sang Panglima Besar:</h4>
+                            <p class="text-sm sm:text-base">
+                                Saat melangkah masuk ke dalam tempat tinggal Abu Ubaidah, Umar tidak menemukan barang mewah satu pun. Di ruangan itu hanya ada sebuah pedang, perisai, pelana kuda yang dijadikan alas tidur, sebuah wadah air sederhana, dan tempat menyimpan roti kering. Umar menangis terharu melihat kediaman pejabat utamanya tersebut lalu berkata: <em>"Dunia telah mengubah kita semua wahai Abu Ubaidah, kecuali engkau! Engkau tetap seperti saat bersama Rasulullah SAW."</em> Abu Ubaidah menjawab dengan tenang: <em>"Wahai Amirul Mukminin, barang-barang sederhana ini sudah lebih dari cukup untuk mengantarkan kita menuju peristirahatan akhirat."</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAB 7 -->
+                <div class="bio-card bab7 bg-white rounded-xl shadow-md overflow-hidden border border-parchment-200 transition hover:shadow-lg">
+                    <div class="bg-gradient-to-r from-emerald-950 to-emerald-900 p-4 sm:p-5 text-amber-200 flex items-center justify-between">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold-600 text-emerald-950 text-sm flex items-center justify-center font-bold mr-3">7</span>
+                            Wabah Tha'un Amwas dan Akhir Hayat Sang Penjaga Amanah (18 H)
+                        </h3>
+                        <span class="text-xs bg-emerald-800 text-amber-300 px-2.5 py-1 rounded-full font-mono">18 H / Syahid</span>
+                    </div>
+                    <div class="p-6 space-y-4 text-slate-700 leading-relaxed">
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-biohazard text-gold-600 mr-2"></i>Ujian Wabah Tha'un Amwas:</h4>
+                            <p class="text-sm sm:text-base">
+                                Pada tahun 18 Hijriah, wilayah Syam dilanda wabah penyakit menular yang sangat ganas, yang dikenal dalam lembaran sejarah sebagai <strong>Tha'un Amwas</strong>. Ribuan prajurit dan penduduk meninggal dunia dalam waktu singkat. Mengetahui posisi Abu Ubaidah yang amat krusial bagi masa depan negara, Khalifah Umar bin al-Khattab mengirimkan surat khusus yang memerintahkan Abu Ubaidah untuk segera pulang ke Madinah dengan alasan tugas mendesak.
+                            </p>
+                        </div>
+                        <div class="bg-parchment-50 p-4 rounded-xl border border-parchment-200">
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-envelope-open-text text-gold-600 mr-2"></i>Keteguhan Menolak Evakuasi Demi Pasukan:</h4>
+                            <p class="text-sm sm:text-base">
+                                Abu Ubaidah memahami maksud tersirat sahabatnya, Umar, yang ingin menyelamatkan nyawanya dari wabah. Namun, beliau menulis surat balasan santun menolak evakuasi pribadi: <em>"Aku memahami keperluanmu denganku wahai Amirul Mukminin. Namun, aku berada di tengah tentara kaum muslimin. Aku tidak ingin menyelamatkan diriku sendiri dan meninggalkan mereka. Aku ingin bernasib sama dengan apa yang ditakdirkan Allah kepada pasukan ini."</em> Membaca surat balasan tersebut, Umar bin al-Khattab menangis terisak-isak hingga para sahabat bertanya apakah Abu Ubaidah telah wafat, dan Umar menjawab: <em>"Belum, tetapi kematian sudah sangat dekat darinya."</em>
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-950 text-base mb-1"><i class="fa-solid fa-kaaba text-gold-600 mr-2"></i>Wafat dan Kepemimpinan yang Ditinggalkan:</h4>
+                            <p class="text-sm sm:text-base">
+                                Tidak lama berselang, Abu Ubaidah terjangkit wabah tersebut. Sebelum menghembuskan napas terakhir pada usia 58 tahun di wilayah Jordan Valley (Ghor al-Urdun), beliau menunjuk Mu'adz bin Jabal radhiyallahu 'anhu sebagai penggantinya dan memberikan wasiat terakir agar umat Islam senantiasa mendirikan shalat, menunaikan zakat, berpuasa, mematuhi pemimpin, dan tidak terperdaya oleh gemerlap dunia. Beliau wafat sebagai syahid (syahid wabah) pada tahun 18 H dan dimakamkan di Fahl / Amwas (sekarang kawasan Deir Alla, Yordania).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 2: POSTER DIGITAL -->
+        <section id="tab-poster" class="tab-content hidden space-y-6">
+            <!-- Poster Actions -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-md border border-parchment-200 no-print">
+                <p class="text-sm text-slate-600">Poster visual siap cetak / simpan PDF dari ringkasan biografi.</p>
+                <button onclick="window.print()" class="bg-emerald-800 hover:bg-emerald-900 text-amber-200 px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center">
+                    <i class="fa-solid fa-print mr-2"></i> Cetak / Simpan PDF Poster
+                </button>
+            </div>
+
+            <!-- Poster Canvas Container -->
+            <div class="poster-card pattern-bg text-amber-100 p-6 sm:p-10 rounded-2xl shadow-2xl border-8 double border-gold-600 max-w-4xl mx-auto space-y-8">
+                <!-- Poster Header -->
+                <div class="text-center space-y-2 border-b border-gold-600/40 pb-6">
+                    <div class="inline-block p-3 rounded-full bg-gold-600/20 text-gold-400 mb-2">
+                        <i class="fa-solid fa-shield-halved text-4xl"></i>
+                    </div>
+                    <p class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Infografis Tokoh Teladan Islam</p>
+                    <h2 class="text-3xl sm:text-5xl font-black text-amber-200 tracking-tight">ABU UBAIDAH BIN AL-JARRAH</h2>
+                    <p class="text-2xl font-arabic text-gold-400">أبو عبيدة بن الجراح — (رضي الله عنه)</p>
+                    <p class="text-sm font-medium text-emerald-200 max-w-xl mx-auto mt-2">
+                        "Amin al-Ummah" — Sosok Penjaga Kepercayaan Umat Islam & Panglima Pembuka Negeri Syam.
+                    </p>
+                </div>
+
+                <!-- Poster Grid Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <!-- Column 1 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">1. Profil & Keutamaan Utama</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                <strong>Nama:</strong> Aamir bin Abdullah bin al-Jarrah al-Qurasyi.<br>
+                                <strong>Gelar Utama:</strong> Amin al-Ummah (Kepercayaan Umat).<br>
+                                <strong>Kedudukan:</strong> Termasuk 10 Sahabat Dijamin Masuk Surga (Al-'Asyrah al-Mubasysyarun bil Jannah).
+                            </p>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">2. Momen Pengorbanan Bersejarah</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Perang Badar:</strong> Memilih tauhid di atas ikatan darah kekeluargaan musyrik.</li>
+                                <li><strong>Perang Uhud:</strong> Menjadi pelindung Nabi dan mencabut besi di pipi Nabi dengan giginya hingga dua gigi depannya patah.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="space-y-4">
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">3. Kepemimpinan & Kezuhudan</h4>
+                            <ul class="text-xs space-y-1 text-amber-100/90 list-disc list-inside">
+                                <li><strong>Panglima Besar Syam:</strong> Memimpin pembebasan Yarmuk, Damaskus, hingga Baitul Maqdis.</li>
+                                <li><strong>Zuhud Luar Biasa:</strong> Kediamannya hanya berisi pedang, perisai, dan pelana kuda hingga membuat Khalifah Umar menangis haru.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-emerald-900/80 p-4 rounded-xl border border-gold-600/30">
+                            <h4 class="text-gold-400 font-bold mb-1 border-b border-gold-600/30 pb-1">4. Akhir Hayat (18 H)</h4>
+                            <p class="text-xs leading-relaxed text-amber-100/90">
+                                Wafat sebagai Syahid akibat Wabah Tha'un Amwas pada usia 58 tahun di Lembah Yordania setelah menolak dievakuasi demi mendampingi prajuritnya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster Footer Quote -->
+                <div class="text-center pt-4 border-t border-gold-600/30">
+                    <p class="text-xs font-serif text-amber-300 italic">
+                        "Inna likulli ummatin aminan, wa aminu hadhihil ummati Abu Ubaidah bin al-Jarrah."
+                    </p>
+                    <p class="text-[10px] text-gold-500 uppercase tracking-widest mt-1">— Sabda Rasulullah SAW (HR. Bukhari & Muslim)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: GARIS WAKTU / TIMELINE -->
+        <section id="tab-timeline" class="tab-content hidden space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 mb-6">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-2">Kronologi Garis Waktu Sejarah</h3>
+                <p class="text-slate-600 text-sm">Jejak langkah perjuangan Abu Ubaidah bin al-Jarrah (ra) dari awal dakwah hingga wafat di Syam.</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-4 border-gold-600 ml-4 sm:ml-32 space-y-8">
+
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        Awal Islam
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">Awal Islam</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Masuk Islam & Hijrah Habasyah</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Memeluk Islam sehari setelah Abu Bakar (As-Sabiqunal Awwalun) dan berhijrah ke Habasyah demi mempertahankan iman.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        2 H / 624 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">2 H / 624 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Pertempuran Badar</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Menghadapi ujian tauhid terberat di medan Badar dan turunnya wahyu penegasan Surah Al-Mujadilah ayat 22.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        3 H / 625 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">3 H / 625 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Perang Uhud</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Menjadi perisai benteng Rasulullah SAW dan mencabut dua rantai besi di pipi Nabi hingga dua gigi depannya tanggal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        9 H / 630 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">9 H / 630 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Misi Najran & Gelar Amin al-Ummah</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Diutus Rasulullah SAW menjadi hakim dan pengajar bagi kaum Najran dengan gelar kehormatan Penjaga Kepercayaan Umat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        13-17 H
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">13-17 H</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Panglima Tertinggi Pembebasan Syam</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Memimpin pasukan penaklukan kawasan Syam, Pertempuran Yarmuk, hingga pembebasan Yerusalem (Baitul Maqdis).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="relative pl-6 sm:pl-8 group">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-emerald-900 border-4 border-gold-500"></div>
+                    <div class="hidden sm:block absolute -left-32 top-1 w-24 text-right text-xs font-bold text-gold-700 uppercase">
+                        18 H / 639 M
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-md border border-parchment-200">
+                        <span class="sm:hidden text-xs font-bold text-gold-700 block mb-1">18 H / 639 M</span>
+                        <h4 class="text-lg font-bold text-emerald-950">Wafat Syahid akibat Wabah Amwas</h4>
+                        <p class="text-sm text-slate-700 mt-2">
+                            Wafat pada usia 58 tahun akibat Wabah Tha'un Amwas di Lembah Yordania demi tetap bersama pasukannya.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TAB 4: CATATAN SAYA -->
+        <section id="tab-catatan" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1"><i class="fa-solid fa-pen-to-square text-gold-600 mr-2"></i>Catatan Pribadi Anda</h3>
+                <p class="text-slate-600 text-sm">Tulis poin-poin penting, faedah, atau kesimpulan dari materi Abu Ubaidah bin al-Jarrah. Catatan ini akan tersimpan otomatis di perangkat Anda.</p>
+            </div>
+
+            <!-- Note Input Card -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <div>
+                    <label for="note-title" class="block text-xs font-bold text-slate-600 uppercase mb-1">Judul Catatan</label>
+                    <input type="text" id="note-title" placeholder="Contoh: Faedah Zuhud & Amanah Abu Ubaidah" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm">
+                </div>
+                <div>
+                    <label for="note-content" class="block text-xs font-bold text-slate-600 uppercase mb-1">Isi Catatan</label>
+                    <textarea id="note-content" rows="4" placeholder="Tulis rangkuman atau faedah hikmah Anda di sini..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-800 text-sm"></textarea>
+                </div>
+                <div class="flex justify-end space-x-2">
+                    <button onclick="clearNoteForm()" class="px-4 py-2 bg-slate-200 text-slate-700 hover:bg-slate-300 rounded-lg text-sm font-semibold transition">
+                        Reset
+                    </button>
+                    <button onclick="saveNote()" class="px-5 py-2 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg text-sm font-semibold transition flex items-center">
+                        <i class="fa-solid fa-floppy-disk mr-2"></i> Simpan Catatan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Saved Notes List -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-parchment-200 space-y-4">
+                <h4 class="text-lg font-bold text-emerald-950 border-b border-slate-100 pb-2 flex items-center justify-between">
+                    <span>Daftar Catatan Tersimpan</span>
+                    <span id="note-count" class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">0 Catatan</span>
+                </h4>
+                <div id="notes-container" class="space-y-3">
+                    <!-- Loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: KUIS INTERAKTIF -->
+        <section id="tab-kuis" class="tab-content hidden space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-parchment-200 text-center">
+                <h3 class="text-2xl font-bold text-emerald-950 mb-1">Kuis Pengetahuan Sahabat</h3>
+                <p class="text-slate-600 text-sm">Uji pemahaman Anda mengenai sejarah dan keutamaan Abu Ubaidah bin al-Jarrah (ra).</p>
+            </div>
+
+            <!-- Quiz Card -->
+            <div id="quiz-container" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-parchment-200 space-y-6">
+                <!-- Progress & Score Header -->
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                    <span id="quiz-progress" class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Pertanyaan 1 dari 5</span>
+                    <span id="quiz-score" class="text-xs font-bold text-gold-700 bg-amber-100 px-3 py-1 rounded-full">Skor: 0</span>
+                </div>
+
+                <!-- Question Text -->
+                <h4 id="quiz-question" class="text-lg sm:text-xl font-bold text-slate-800">
+                    <!-- Loaded via JS -->
+                </h4>
+
+                <!-- Options -->
+                <div id="quiz-options" class="space-y-3">
+                    <!-- Loaded via JS -->
+                </div>
+
+                <!-- Explanation Box -->
+                <div id="quiz-explanation" class="hidden p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm space-y-1">
+                    <span id="explanation-status" class="font-bold block"></span>
+                    <p id="explanation-text" class="text-slate-700"></p>
+                </div>
+
+                <!-- Next Button -->
+                <button id="quiz-next-btn" onclick="nextQuestion()" class="hidden w-full py-3 bg-emerald-900 hover:bg-emerald-800 text-amber-200 rounded-lg font-bold text-center transition">
+                    Lanjut ke Pertanyaan Berikutnya <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Quiz Result Card -->
+            <div id="quiz-result" class="hidden bg-white p-8 rounded-xl shadow-xl border border-parchment-200 text-center space-y-6">
+                <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto text-gold-600 text-4xl shadow-inner">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-emerald-950">Kuis Selesai!</h3>
+                    <p class="text-slate-600 text-sm mt-1">Terima kasih telah mempelajari biografi Abu Ubaidah bin al-Jarrah (ra).</p>
+                </div>
+                <div class="bg-parchment-100 p-4 rounded-lg inline-block">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Skor Akhir Anda</p>
+                    <p id="final-score" class="text-4xl font-black text-emerald-900 mt-1">0 / 100</p>
+                </div>
+                <div>
+                    <button onclick="resetQuiz()" class="px-6 py-2.5 bg-emerald-900 text-amber-200 rounded-lg font-bold hover:bg-emerald-800 transition">
+                        <i class="fa-solid fa-rotate-right mr-2"></i> Coba Kuis Lagi
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-amber-200/80 text-xs text-center py-6 border-t border-gold-600/30 no-print">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p class="font-medium">Aplikasi Biografi Lengkap & Interaktif Abu Ubaidah bin al-Jarrah (ra)</p>
+            <p class="text-amber-100/50">Dirancang dengan tema Islamic Gold & Parchment untuk kemudahan pembacaan dan pembelajaran.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Tab Navigation System
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+                tab.classList.remove('block');
+            });
+
+            const activeTab = document.getElementById('tab-' + tabId);
+            if (activeTab) {
+                activeTab.classList.remove('hidden');
+                activeTab.classList.add('block');
+            }
+
+            const navIds = ['biografi', 'poster', 'timeline', 'catatan', 'kuis'];
+            navIds.forEach(id => {
+                const btn = document.getElementById('nav-' + id);
+                if (btn) {
+                    if (id === tabId) {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-amber-300 bg-emerald-900/80 border border-gold-500/40 font-semibold";
+                    } else {
+                        btn.className = "px-3 py-2 rounded-lg transition-all text-emerald-200 hover:text-amber-300 hover:bg-emerald-900/50 font-normal";
+                    }
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Biography Search Filter
+        function filterBiography() {
+            const input = document.getElementById('biography-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.bio-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Chapter Category Filter
+        function filterChapter(babClass) {
+            const cards = document.querySelectorAll('.bio-card');
+            const btns = document.querySelectorAll('.chapter-btn');
+
+            btns.forEach(btn => {
+                btn.className = "chapter-btn text-xs px-3 py-2 rounded-md font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+            });
+
+            if (event && event.target) {
+                event.target.className = "chapter-btn active text-xs px-3 py-2 rounded-md font-semibold bg-emerald-900 text-amber-200 transition";
+            }
+
+            cards.forEach(card => {
+                if (babClass === 'all') {
+                    card.style.display = "block";
+                } else {
+                    if (card.classList.contains(babClass)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                }
+            });
+        }
+
+        // --- FITUR CATATAN (LOCALSTORAGE) ---
+        function getSavedNotes() {
+            let notes = localStorage.getItem('abu_ubaidah_notes');
+            return notes ? JSON.parse(notes) : [];
+        }
+
+        function saveNote() {
+            const titleInput = document.getElementById('note-title');
+            const contentInput = document.getElementById('note-content');
+            
+            const title = titleInput.value.trim();
+            const content = contentInput.value.trim();
+
+            if (!title || !content) {
+                alert('Judul dan isi catatan tidak boleh kosong!');
+                return;
+            }
+
+            const newNote = {
+                id: Date.now(),
+                title: title,
+                content: content,
+                date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+            };
+
+            let notes = getSavedNotes();
+            notes.unshift(newNote);
+            localStorage.setItem('abu_ubaidah_notes', JSON.stringify(notes));
+
+            titleInput.value = '';
+            contentInput.value = '';
+            loadNotes();
+            alert('Catatan berhasil disimpan!');
+        }
+
+        function deleteNote(id) {
+            if (confirm('Apakah Anda yakin ingin menghapus catatan ini?')) {
+                let notes = getSavedNotes();
+                notes = notes.filter(note => note.id !== id);
+                localStorage.setItem('abu_ubaidah_notes', JSON.stringify(notes));
+                loadNotes();
+            }
+        }
+
+        function clearNoteForm() {
+            document.getElementById('note-title').value = '';
+            document.getElementById('note-content').value = '';
+        }
+
+        function loadNotes() {
+            const notes = getSavedNotes();
+            const container = document.getElementById('notes-container');
+            const countBadge = document.getElementById('note-count');
+
+            countBadge.innerText = `${notes.length} Catatan`;
+            container.innerHTML = '';
+
+            if (notes.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">Belum ada catatan yang tersimpan.</p>`;
+                return;
+            }
+
+            notes.forEach(note => {
+                const noteCard = document.createElement('div');
+                noteCard.className = "p-4 rounded-lg bg-parchment-50 border border-parchment-200 space-y-2 relative group";
+                noteCard.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <h5 class="font-bold text-emerald-950 text-base">${escapeHtml(note.title)}</h5>
+                        <button onclick="deleteNote(${note.id})" class="text-red-500 hover:text-red-700 text-xs px-2 py-1 rounded transition" title="Hapus Catatan">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-500 font-mono">${note.date}</p>
+                    <p class="text-sm text-slate-700 whitespace-pre-line leading-relaxed">${escapeHtml(note.content)}</p>
+                `;
+                container.appendChild(noteCard);
+            });
+        }
+
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+        // --- KUIS INTERAKTIF ---
+        const quizQuestions = [
+            {
+                question: "Gelar kehormatan utama apakah yang diberikan oleh Rasulullah SAW kepada Abu Ubaidah bin al-Jarrah?",
+                options: [
+                    "Saifullah al-Maslul (Pedang Allah)",
+                    "Amin al-Ummah (Kepercayaan Umat Ini)",
+                    "Asadullah (Singa Allah)",
+                    "Dhun-Nurain (Pemilik Dua Cahaya)"
+                ],
+                correct: 1,
+                explanation: "Rasulullah SAW bersabda bahwa setiap umat memiliki sosok kepercayaan, dan kepercayaan umat Islam ini adalah Abu Ubaidah bin al-Jarrah (HR. Bukhari & Muslim)."
+            },
+            {
+                question: "Pengorbanan mulia apakah yang dilakukan Abu Ubaidah bin al-Jarrah untuk Rasulullah SAW pada Perang Uhud?",
+                options: [
+                    "Membuat parit perlindungan khusus untuk Nabi",
+                    "Mencabut dua rantai besi di pipi Nabi dengan giginya hingga dua gigi depannya tanggal",
+                    "Menggendong Nabi sejauh lima kilometer dari medan pertempuran",
+                    "Menyerahkan seluruh harta simpanannya untuk pengobatan Nabi"
+                ],
+                correct: 1,
+                explanation: "Dengan kasih sayang yang amat dalam, Abu Ubaidah mencabut dua besi helm perang yang menancap di pipi Nabi menggunakan giginya secara perlahan hingga dua gigi depannya patah."
+            },
+            {
+                question: "Surah dalam Al-Qur'an manakah yang diturunkan menanggapi keteguhan tauhid Abu Ubaidah di medan Perang Badar?",
+                options: [
+                    "Surah Al-Anfal ayat 1",
+                    "Surah Al-Mujadilah ayat 22",
+                    "Surah At-Taubah ayat 100",
+                    "Surah Al-Ahzab ayat 23"
+                ],
+                correct: 1,
+                explanation: "Surah Al-Mujadilah ayat 22 diturunkan memuji keteguhan iman Abu Ubaidah yang mengutamakan Allah dan Rasul-Nya di atas ikatan kekeluargaan musyrik."
+            },
+            {
+                question: "Mengapa Khalifah Umar bin al-Khattab menangis saat mengunjungi kediaman Abu Ubaidah di Syam?",
+                options: [
+                    "Karena Abu Ubaidah sedang sakit parah",
+                    "Karena melihat kesederhanaan rumahnya yang hanya berisi pedang, perisai, dan pelana kuda",
+                    "Karena Abu Ubaidah menolak jabatan gubernur",
+                    "Karena rumah Abu Ubaidah hancur akibat perang"
+                ],
+                correct: 1,
+                explanation: "Meskipun menjabat sebagai Gubernur Syam, rumah Abu Ubaidah sangat zuhud tanpa barang mewah, membuat Khalifah Umar terharu dan menangis."
+            },
+            {
+                question: "Wabah penyakit apakah yang menyebabkan wafatnya Abu Ubaidah bin al-Jarrah sebagai syahid di Syam pada tahun 18 H?",
+                options: [
+                    "Wabah Kolera Baghdad",
+                    "Tha'un Amwas",
+                    "Cacar air Yerusalem",
+                    "Demam malaria Kufah"
+                ],
+                correct: 1,
+                explanation: "Abu Ubaidah wafat sebagai syahid akibat Tha'un Amwas pada tahun 18 H di Lembah Yordania setelah menolak meninggalkan prajuritnya."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizQuestions[currentQuestion];
+            document.getElementById('quiz-progress').innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizQuestions.length}`;
+            document.getElementById('quiz-question').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+
+            document.getElementById('quiz-explanation').classList.add('hidden');
+            document.getElementById('quiz-next-btn').classList.add('hidden');
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-lg border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 font-medium text-sm transition flex items-center justify-between";
+                btn.innerHTML = `<span>${String.fromCharCode(65 + idx)}. ${opt}</span> <i class="fa-regular fa-circle text-slate-300"></i>`;
+                btn.onclick = () => checkAnswer(idx, btn);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIdx, btnElement) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizQuestions[currentQuestion];
+            const optionsBtns = document.getElementById('quiz-options').children;
+
+            if (selectedIdx === q.correct) {
+                score += 20;
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-100 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-check text-emerald-700 text-lg";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Benar!";
+                document.getElementById('explanation-status').className = "font-bold text-emerald-800 block";
+            } else {
+                btnElement.className = "w-full text-left p-4 rounded-lg border border-red-400 bg-red-50 text-red-900 font-medium text-sm flex items-center justify-between";
+                btnElement.querySelector('i').className = "fa-solid fa-circle-xmark text-red-600 text-lg";
+
+                optionsBtns[q.correct].className = "w-full text-left p-4 rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-950 font-bold text-sm flex items-center justify-between";
+                
+                document.getElementById('explanation-status').innerText = " Jawaban Kurang Tepat";
+                document.getElementById('explanation-status').className = "font-bold text-red-700 block";
+            }
+
+            document.getElementById('quiz-score').innerText = `Skor: ${score}`;
+            document.getElementById('explanation-text').innerText = q.explanation;
+            document.getElementById('quiz-explanation').classList.remove('hidden');
+            document.getElementById('quiz-next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('final-score').innerText = `${score} / 100`;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-score').innerText = `Skor: 0`;
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        window.onload = function() {
+            loadQuestion();
+            loadNotes();
+        };
+    </script>
+</body>
+</html>
